@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/MainMenuScene/UI/style.uss?fileID=7433441132597879392&amp;guid=3805a913e06c40b47a35b2296ba4e122&amp;type=3#style"/>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Retro Jump" class="MainTitle" style="position: relative; font-size: 100%; top: -9px; left: 110px; rotate: 0; right: -109px;"/>
+        <ui:Button text="Start" style="width: 10%; height: 10%; aspect-ratio: 1; align-items: stretch; align-self: center; align-content: center; -unity-text-align: middle-center; position: absolute; top: 518px; left: 1132px; font-size: 100px;"/>
+    </ui:VisualElement>
+</ui:UXML>
