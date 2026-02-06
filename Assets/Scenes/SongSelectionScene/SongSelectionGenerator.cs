@@ -6,12 +6,14 @@ public class SongSelectionGenerator : MonoBehaviour
     public GameObject[] songs = new GameObject[20];
     public Button myButton;
     public Text buttonText;
-    public GameObject content = GameObject.Find("Content");
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-            
+                     GameObject content = null;
+   
+                     content = transform.gameObject;
         for (int i = 0; i < songs.Length; i++)
         {
             songs[i] = new GameObject("Button " + i);
@@ -23,9 +25,8 @@ public class SongSelectionGenerator : MonoBehaviour
 
         dynamicButton.onClick.AddListener(() => Debug.Log("Dynamic Button Clicked!"));
         }
-        Renderer rend = GetComponent<Renderer>();
-        Vector3 size = rend.bounds.size;
-        content.transform.localScale = new Vector3(size.x, 50*songs.Length, size.z);
+       content.transform.localScale = new Vector3(1f, 1f, 1f);
+
     }
     // Update is called once per frame
     void Update()
