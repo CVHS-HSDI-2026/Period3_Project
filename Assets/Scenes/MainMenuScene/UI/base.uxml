@@ -1,20 +1,22 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Scenes/MainMenuScene/UI/style.uss?fileID=7433441132597879392&amp;guid=3805a913e06c40b47a35b2296ba4e122&amp;type=3#style"/>
-    <ui:VisualElement style="flex-grow: 1;">
-        <ui:Label text="Retro Jump" class="MainTitle" style="font-size: 125%; -unity-font-style: bold;"/>
+    <ui:VisualElement class="BackgroundContainer" style="position: absolute; justify-content: flex-end;">
+        <ui:VisualElement class="BackgroundGround" style="width: 150%; left: -25%; height: 30%; bottom: -15%;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement" style="height: 100%; width: 100%;">
+        <ui:Label text="Retro Jump" class="MainTitle" style="font-size: 200%; -unity-font-style: bold; background-color: rgba(0, 0, 0, 0);"/>
         <ui:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: space-around; flex-direction: row; align-content: stretch;">
             <ui:VisualElement class="ButtonContainer">
-                <ui:Button text="Button" class="ButtonContainerButton"/>
-                <ui:Button text="Button" class="ButtonContainerButton"/>
+                <ui:Button text="Characters" class="ButtonContainerButton"/>
+                <ui:Button text="Settings" class="ButtonContainerButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer" style="justify-content: flex-start;">
-                <ui:Button text="Start" class="StartButton" style="background-color: rgba(188, 188, 188, 0); font-size: 75%; -unity-text-outline-width: 3.75px; -unity-font-style: normal;"/>
+                <ui:Button text="Play" class="StartButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer">
-                <ui:Button text="Button" class="ButtonContainerButton"/>
-                <ui:Button text="Button" class="ButtonContainerButton"/>
+                <ui:Button text="Songs" class="ButtonContainerButton"/>
+                <ui:Button text="Rope Skins" class="ButtonContainerButton"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement class="CatBackgroundContainer"/>
 </ui:UXML>
