@@ -3,7 +3,7 @@
     <ui:VisualElement class="BackgroundContainer" style="position: absolute; justify-content: flex-end;">
         <ui:VisualElement class="BackgroundGround" style="width: 150%; left: -25%; height: 30%; bottom: -15%;"/>
     </ui:VisualElement>
-    <ui:VisualElement name="VisualElement" style="height: 100%; width: 100%;">
+    <ui:VisualElement name="MainElementContainer" style="height: 100%; width: 100%;">
         <ui:Label text="Retro Jump" class="MainTitle" style="font-size: 200%; -unity-font-style: bold; background-color: rgba(0, 0, 0, 0);"/>
         <ui:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: space-around; flex-direction: row; align-content: stretch;">
             <ui:VisualElement class="ButtonContainer">
@@ -11,7 +11,7 @@
                 <ui:Button text="Settings" class="ButtonContainerButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer" style="justify-content: flex-start;">
-                <ui:Button text="Play" class="StartButton"/>
+                <ui:Button text="Play" name="PlayButton" class="StartButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer">
                 <ui:Button text="Songs" class="ButtonContainerButton"/>
