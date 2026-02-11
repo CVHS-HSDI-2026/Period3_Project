@@ -3,8 +3,8 @@ import os
 from flask import Flask, flash, request, redirect, url_for,jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = '/home/potato/Downloads'
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+UPLOAD_FOLDER = '/home/music'
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid'}
 secret_key = os.urandom(24).hex() 
 app = Flask(__name__)
 app.secret_key = secret_key
@@ -13,8 +13,9 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-def audio_splicing(file):
-    return file
+def audio_splicing(filename):
+    print(UPLOAD_FOLDER+/filename)
+    return
 @app.route('/employees', methods=['GET'])
 
 def get_employees():
@@ -40,7 +41,7 @@ def upload_file():
             file = audio_splicing(file)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
-    return send_from_directory(app.config["UPLOAD_FOLDER"], file.filename)
+    return "failed"
 
 if __name__ == '__main__':
     app.run(port=5000)
