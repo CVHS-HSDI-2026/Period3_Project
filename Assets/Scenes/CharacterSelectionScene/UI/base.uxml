@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/MainMenuScene/UI/style.uss?fileID=7433441132597879392&amp;guid=3805a913e06c40b47a35b2296ba4e122&amp;type=3#style"/>
+    <ui:VisualElement style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Pixelify%20Sans/static/PixelifySans-Medium.ttf?fileID=12800000&amp;guid=715f6df3b9287414188cfb52df249ec9&amp;type=3#PixelifySans-Medium&quot;);">
+        <ui:Label text="Character" style="color: rgb(255, 0, 163); font-size: 50px; -unity-text-outline-width: 2px; -unity-text-outline-color: rgb(0, 0, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Pixelify%20Sans/static/PixelifySans-SemiBold.ttf?fileID=12800000&amp;guid=3d49875c1a61f5540a4a99ac336cf11c&amp;type=3#PixelifySans-SemiBold&quot;); height: 63px;"/>
+    </ui:VisualElement>
+    <ui:Image data-source-path="" name="menu" style="height: 212px;"/>
+</ui:UXML>
