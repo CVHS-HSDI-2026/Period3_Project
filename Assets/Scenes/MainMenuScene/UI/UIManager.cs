@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements; // Required namespace for UI Toolkit
+using UnityEngine.SceneManagement;
 using System;
 
 public class UIManager : MonoBehaviour
@@ -15,10 +16,10 @@ public class UIManager : MonoBehaviour
         var root = uiDocument.rootVisualElement;
 
         // Get reference to button in code
-        Button myButton = root.Query<Button>("PlayButton");
-        if (myButton != null)
+        Button playButton = root.Query<Button>("PlayButton");
+        if (playButton != null)
         {
-            myButton.clicked += OnPlayButtonClicked; // Register the callback method
+            playButton.clicked += OnPlayButtonClicked; // Register the callback method
         }
         else
         {
@@ -26,10 +27,10 @@ public class UIManager : MonoBehaviour
         }
 
         // Get reference to button in code
-        Button myButton = root.Query<Button>("CharacterSelectButton");
-        if (myButton != null)
+        Button characterSelectButton = root.Query<Button>("CharacterSelectButton");
+        if (characterSelectButton != null)
         {
-            myButton.clicked += OnPlayButtonClicked; // Register the callback method
+            characterSelectButton.clicked += OnCharacterSelectButtonClicked; // Register the callback method
         }
         else
         {
@@ -37,21 +38,21 @@ public class UIManager : MonoBehaviour
         }
 
         // Get reference to button in code
-        Button myButton = root.Query<Button>("SettingsButton");
-        if (myButton != null)
-        {
-            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-        }
-        else
-        {
-            Debug.LogError("SettingsButton not found in UXML document!");
-        }
+        //Button settingsButton = root.Query<Button>("SettingsButton");
+        //if (settingsButton != null)
+        //{
+        //    settingsButton.clicked += OnSettingsButtonClicked; // Register the callback method
+        //}
+        //else
+        //{
+        //    Debug.LogError("SettingsButton not found in UXML document!");
+        //}
 
         // Get reference to button in code
-        Button myButton = root.Query<Button>("SongsButton");
-        if (myButton != null)
+        Button songsButton = root.Query<Button>("SongsButton");
+        if (songsButton != null)
         {
-            myButton.clicked += OnPlayButtonClicked; // Register the callback method
+            songsButton.clicked += OnSongsButtonClicked; // Register the callback method
         }
         else
         {
@@ -59,10 +60,10 @@ public class UIManager : MonoBehaviour
         }
 
         // Get reference to button in code
-        Button myButton = root.Query<Button>("RopeSkinsButton");
-        if (myButton != null)
+        Button ropeSkinsButton = root.Query<Button>("RopeSkinsButton");
+        if (ropeSkinsButton != null)
         {
-            myButton.clicked += OnPlayButtonClicked; // Register the callback method
+            ropeSkinsButton.clicked += OnRopeSkinsButtonClicked; // Register the callback method
         }
         else
         {
@@ -70,11 +71,31 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // This method is called when the button is clicked
     private void OnPlayButtonClicked()
     {
-        Debug.Log("Button was clicked!");
-        // Add your specific action here, e.g., load a scene, open a menu, etc.
+        Debug.Log("PlayButton was clicked!");
+    }
+
+    private void OnCharacterSelectButtonClicked()
+    {
+        Debug.Log("CharacterSelectButton was clicked!");
+        SceneManager.LoadScene("CharacterSelectScene");
+    }
+
+    //private void OnSettingsButtonClicked()
+    //{
+    //    Debug.Log("SettingsButton was clicked!");
+    //    SceneManager.LoadScene("SettingsScene");
+    //}
+
+    private void OnSongsButtonClicked()
+    {
+        Debug.Log("SongsButton was clicked!");
+    }
+
+    private void OnRopeSkinsButtonClicked()
+    {
+        Debug.Log("RopeSkinsButton was clicked!");
     }
 
     // It's good practice to unregister callbacks when the object is disabled or destroyed
@@ -82,10 +103,58 @@ public class UIManager : MonoBehaviour
     {
         var uiDocument = GetComponent<UIDocument>();
         var root = uiDocument.rootVisualElement;
-        Button myButton = root.Query<Button>("MyButton");
-        if (myButton != null)
+        Button playButton = root.Query<Button>("PlayButton");
+        if (playButton != null)
         {
-            myButton.clicked -= OnPlayButtonClicked; // Unregister to prevent memory leaks
+            playButton.clicked -= OnPlayButtonClicked; // Register the callback method
+        }
+        else
+        {
+            Debug.LogError("PlayButton not found in UXML document!");
+        }
+
+        // Get reference to button in code
+        Button characterSelectButton = root.Query<Button>("CharacterSelectButton");
+        if (characterSelectButton != null)
+        {
+            characterSelectButton.clicked -= OnCharacterSelectButtonClicked; // Register the callback method
+        }
+        else
+        {
+            Debug.LogError("CharacterSelectButton not found in UXML document!");
+        }
+
+        //// Get reference to button in code
+        //Button settingsButton = root.Query<Button>("SettingsButton");
+        //if (settingsButton != null)
+        //{
+        //    settingsButton.clicked -= OnSettingsButtonClicked; // Register the callback method
+        //}
+        //else
+        //{
+        //    Debug.LogError("SettingsButton not found in UXML document!");
+        //}
+
+        // Get reference to button in code
+        Button songsButton = root.Query<Button>("SongsButton");
+        if (songsButton != null)
+        {
+            songsButton.clicked -= OnSongsButtonClicked; // Register the callback method
+        }
+        else
+        {
+            Debug.LogError("SongsButton not found in UXML document!");
+        }
+
+        // Get reference to button in code
+        Button ropeSkinsButton = root.Query<Button>("RopeSkinsButton");
+        if (ropeSkinsButton != null)
+        {
+            ropeSkinsButton.clicked -= OnRopeSkinsButtonClicked; // Register the callback method
+        }
+        else
+        {
+            Debug.LogError("RopeSkinsButton not found in UXML document!");
         }
     }
 }

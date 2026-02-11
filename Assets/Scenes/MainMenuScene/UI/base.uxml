@@ -7,15 +7,15 @@
         <ui:Label text="Retro Jump" class="MainTitle" style="font-size: 200%; -unity-font-style: bold; background-color: rgba(0, 0, 0, 0);"/>
         <ui:VisualElement style="flex-grow: 1; align-items: stretch; justify-content: space-around; flex-direction: row; align-content: stretch;">
             <ui:VisualElement class="ButtonContainer">
-                <ui:Button text="Characters" class="ButtonContainerButton"/>
-                <ui:Button text="Settings" class="ButtonContainerButton"/>
+                <ui:Button text="Characters" name="CharacterSelectButton" class="ButtonContainerButton"/>
+                <ui:Button text="Settings" name="SettingsButton" class="ButtonContainerButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer" style="justify-content: flex-start;">
                 <ui:Button text="Play" name="PlayButton" class="StartButton"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer">
-                <ui:Button text="Songs" class="ButtonContainerButton"/>
-                <ui:Button text="Rope Skins" class="ButtonContainerButton"/>
+                <ui:Button text="Songs" name="SongsButton" class="ButtonContainerButton"/>
+                <ui:Button text="Rope Skins" name="RopeSkinsButton" class="ButtonContainerButton"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
