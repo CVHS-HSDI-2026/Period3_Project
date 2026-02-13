@@ -3,7 +3,7 @@ using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using UnityEngine.SceneManagement;
 using System;
 
-public class UIManager : MonoBehaviour
+public class MainMenuSceneUIManager : MonoBehaviour
 {
     // The UXML asset should be assigned to the UIDocument component in the Inspector
 
