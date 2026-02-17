@@ -4,7 +4,7 @@ from flask import Flask, flash, request, redirect, url_for,jsonify, send_from_di
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = '/home/music'
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid'}
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav'}
 secret_key = os.urandom(24).hex() 
 app = Flask(__name__)
 app.secret_key = secret_key
@@ -14,7 +14,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 def audio_splicing(filename):
-    print(UPLOAD_FOLDER+/filename)
+    print(UPLOAD_FOLDER+'/filename')
     return
 @app.route('/employees', methods=['GET'])
 
