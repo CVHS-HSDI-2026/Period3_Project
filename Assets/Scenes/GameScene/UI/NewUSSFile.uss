@@ -1,0 +1,6 @@
+VisualElement {
+}
+
+Button.pausePlay {
+    display: flex;
+}
