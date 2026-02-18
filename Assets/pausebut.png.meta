@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3f100b4423a4aea4493664c65abdf619
+guid: e54fe94533c6aef489ce74d5f3f5ceee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5931842347579807508
-    second: New Piskel-1.png_0
-  - first:
-      213: 6837126915485482293
-    second: New Piskel-1.png_1
+      213: 9032724399805579160
+    second: pausebut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-1.png_0
+      name: pausebut_0
       rect:
         serializedVersion: 2
-        x: 359
-        y: 359
-        width: 182
-        height: 482
+        x: 824
+        y: 374
+        width: 467
+        height: 467
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4171d17df23225250800000000000000
-      internalID: 5931842347579807508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: New Piskel-1.png_1
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 359
-        width: 182
-        height: 482
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53d36c974ba52ee50800000000000000
-      internalID: 6837126915485482293
+      spriteID: 89f3a64fbfeaa5d70800000000000000
+      internalID: 9032724399805579160
       vertices: []
       indices: 
       edges: []
@@ -160,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel-1.png_0: 5931842347579807508
-      New Piskel-1.png_1: 6837126915485482293
+      pausebut_0: 9032724399805579160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

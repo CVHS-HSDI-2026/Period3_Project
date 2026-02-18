@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d170e4a2386f1034b8bbfb20a16013ae
+guid: e7057c5869e01dd4faccd25678d93940
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1603291472181913768
-    second: New Piskel (3)_0
+      213: -813479128051361644
+    second: HomeBut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (3)_0
+      name: HomeBut_0
       rect:
         serializedVersion: 2
         x: 47
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8571f2196e6ffb9e0800000000000000
-      internalID: -1603291472181913768
+      spriteID: 498dd440b01f5b4f0800000000000000
+      internalID: -813479128051361644
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel (3)_0: -1603291472181913768
+      HomeBut_0: -813479128051361644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
