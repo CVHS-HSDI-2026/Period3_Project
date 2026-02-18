@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scenes/SongSelectionScene/UI/Style.uss?fileID=7433441132597879392&amp;guid=c29a2a2bcef300b44aab2cb5a54009da&amp;type=3#Style"/>
+    <ui:ScrollView vertical-scroller-visibility="Hidden" style="height: 40%; width: 100%;">
+        <ui:Image name="Image" style="height: 47px; width: 50px; position: absolute; top: 27px; left: 27px;"/>
+        <ui:Image name="Image" style="height: 47px; width: 50px; position: absolute; top: 25px; left: 549px;"/>
+        <ui:Image name="Image" style="height: 47px; width: 50px; position: absolute; top: 27px; left: 158px;"/>
+        <ui:Image name="Image" style="height: 47px; width: 50px; position: absolute; top: 27px; left: 321px;"/>
+        <ui:Image name="Image" style="height: 47px; width: 50px; position: absolute; top: 26px; left: 431px;"/>
+    </ui:ScrollView>
+</ui:UXML>
