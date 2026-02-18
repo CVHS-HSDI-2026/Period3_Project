@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 486d064d419bb7448a2efc8a9bb563b2
+guid: 924b4867ebd6e854081f9df08a4581f7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6888756438569675735
-    second: New Piskel (1)_0
+      213: -7491400044993150122
+    second: ' coolcatup_0'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel (1)_0
+      name: ' coolcatup_0'
       rect:
         serializedVersion: 2
-        x: 99
-        y: 80
-        width: 83
-        height: 71
+        x: 122
+        y: 129
+        width: 362
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9249ede64883660a0800000000000000
-      internalID: -6888756438569675735
+      spriteID: 65386d7a953390890800000000000000
+      internalID: -7491400044993150122
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel (1)_0: -6888756438569675735
+      ' coolcatup_0': -7491400044993150122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
