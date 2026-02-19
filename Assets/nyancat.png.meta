@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Arrow.gif.meta
-guid: 8c6c9ab0e72ecfb429c1d9ee63e3ee6b
+guid: f55fa43ade769ee44a1cd46fed66a721
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4346244404228752641
-    second: Arrow_0
-========
-guid: 924b4867ebd6e854081f9df08a4581f7
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7491400044993150122
-    second: ' coolcatup_0'
->>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+      213: -1132946518041028937
+    second: nyancat_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,47 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Arrow.gif.meta
-      name: Arrow_0
-========
-      name: ' coolcatup_0'
->>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+      name: nyancat_0
       rect:
         serializedVersion: 2
-        x: 122
-        y: 129
-        width: 362
-        height: 325
+        x: 118
+        y: 79
+        width: 1603
+        height: 803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,13 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Arrow.gif.meta
-      spriteID: ffa7ae2edb90fa3c0800000000000000
-      internalID: -4346244404228752641
-========
-      spriteID: 65386d7a953390890800000000000000
-      internalID: -7491400044993150122
->>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+      spriteID: 7b616aaf427f640f0800000000000000
+      internalID: -1132946518041028937
       vertices: []
       indices: 
       edges: []
@@ -179,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Arrow.gif.meta
-      Arrow_0: -4346244404228752641
-========
-      ' coolcatup_0': -7491400044993150122
->>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+      nyancat_0: -1132946518041028937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
