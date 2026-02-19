@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: e7057c5869e01dd4faccd25678d93940
-=======
-guid: ebdc719153d92744cbb19a46a59adafa
->>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec
+guid: 09af33962a7f58843a581944cc0f2f21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -813479128051361644
-    second: HomeBut_0
+      213: 4321703976740834527
+    second: strawcatup_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HomeBut_0
+      name: strawcatup_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 65
-        width: 80
-        height: 80
+        x: 175
+        y: 145
+        width: 567
+        height: 676
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 498dd440b01f5b4f0800000000000000
-      internalID: -813479128051361644
+      spriteID: fdcc7069ed6c9fb30800000000000000
+      internalID: 4321703976740834527
       vertices: []
       indices: 
       edges: []
@@ -165,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HomeBut_0: -813479128051361644
+      strawcatup_0: 4321703976740834527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

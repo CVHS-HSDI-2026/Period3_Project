@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements; // Required namespace for UI Toolkit
+using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
@@ -74,12 +75,13 @@ public class MainMenuSceneUIManager : MonoBehaviour
     private void OnPlayButtonClicked()
     {
         Debug.Log("PlayButton was clicked!");
+        LoadSceneAsync("GameScene");
     }
 
     private void OnCharacterSelectButtonClicked()
     {
         Debug.Log("CharacterSelectButton was clicked!");
-        SceneManager.LoadScene("CharacterSelectScene");
+        LoadSceneAsync("CharacterSelectScene");
     }
 
     //private void OnSettingsButtonClicked()
@@ -91,6 +93,7 @@ public class MainMenuSceneUIManager : MonoBehaviour
     private void OnSongsButtonClicked()
     {
         Debug.Log("SongsButton was clicked!");
+        LoadSceneAsync("SongSelectionScene");
     }
 
     private void OnRopeSkinsButtonClicked()
@@ -155,6 +158,22 @@ public class MainMenuSceneUIManager : MonoBehaviour
         else
         {
             Debug.LogError("RopeSkinsButton not found in UXML document!");
+        }
+    }
+
+    void LoadSceneAsync(string sceneName)
+    {
+        //$"Scenes/{sceneName}/{sceneName}"
+        AsyncOperation operation = SceneManager.LoadSceneAsync(2);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            Debug.Log(progress);
+            //if (progressBar != null)
+            //{
+            //    progressBar.value = progress;
+            //}
         }
     }
 }
