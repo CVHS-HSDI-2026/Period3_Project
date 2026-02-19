@@ -1,11 +1,24 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Assets/Arrow.gif.meta
 guid: f374591139138874d8608e851b1beb84
+=======
+<<<<<<<< Updated upstream:Assets/strawcatdown.png.meta
+guid: b2461fe61f948574b896e7840394ff8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5492962669730025140
+    second: strawcatdown_0
+========
+guid: 8f7347e8612536b4e9a3ff0fb087049c
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4346244404228752641
     second: Arrow_0
+<<<<<<< Updated upstream
 ========
 guid: 924b4867ebd6e854081f9df08a4581f7
 TextureImporter:
@@ -14,6 +27,9 @@ TextureImporter:
       213: -7491400044993150122
     second: ' coolcatup_0'
 >>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+=======
+>>>>>>>> Stashed changes:Assets/Arrow.gif.meta
+>>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,6 +121,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
@@ -131,10 +148,13 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Assets/Arrow.gif.meta
       name: Arrow_0
 ========
@@ -146,6 +166,19 @@ TextureImporter:
         y: 129
         width: 362
         height: 325
+=======
+<<<<<<<< Updated upstream:Assets/strawcatdown.png.meta
+      name: strawcatdown_0
+========
+      name: Arrow_0
+>>>>>>>> Stashed changes:Assets/Arrow.gif.meta
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 43
+        width: 568
+        height: 650
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,6 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Assets/Arrow.gif.meta
       spriteID: ffa7ae2edb90fa3c0800000000000000
       internalID: -4346244404228752641
@@ -161,6 +195,15 @@ TextureImporter:
       spriteID: 65386d7a953390890800000000000000
       internalID: -7491400044993150122
 >>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+=======
+<<<<<<<< Updated upstream:Assets/strawcatdown.png.meta
+      spriteID: c41b24a0e8315c3b0800000000000000
+      internalID: -5492962669730025140
+========
+      spriteID: ffa7ae2edb90fa3c0800000000000000
+      internalID: -4346244404228752641
+>>>>>>>> Stashed changes:Assets/Arrow.gif.meta
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -179,11 +222,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Assets/Arrow.gif.meta
       Arrow_0: -4346244404228752641
 ========
       ' coolcatup_0': -7491400044993150122
 >>>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec:Assets/ coolcatup.png.meta
+=======
+<<<<<<<< Updated upstream:Assets/strawcatdown.png.meta
+      strawcatdown_0: -5492962669730025140
+========
+      Arrow_0: -4346244404228752641
+>>>>>>>> Stashed changes:Assets/Arrow.gif.meta
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

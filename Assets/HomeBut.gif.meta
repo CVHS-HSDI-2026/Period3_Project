@@ -1,14 +1,30 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 guid: e7057c5869e01dd4faccd25678d93940
 =======
 guid: ebdc719153d92744cbb19a46a59adafa
 >>>>>>> 1f6d52db493e926d31d374ecb5fe6c2282cd02ec
+=======
+<<<<<<<< Updated upstream:Assets/strawcatup.png.meta
+guid: 09af33962a7f58843a581944cc0f2f21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4321703976740834527
+    second: strawcatup_0
+========
+guid: 0f997f6670b20504a90d0b8cf98005ed
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -813479128051361644
     second: HomeBut_0
+<<<<<<< Updated upstream
+=======
+>>>>>>>> Stashed changes:Assets/HomeBut.gif.meta
+>>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,6 +116,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< Updated upstream
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
@@ -126,10 +143,13 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: HomeBut_0
       rect:
         serializedVersion: 2
@@ -137,6 +157,19 @@ TextureImporter:
         y: 65
         width: 80
         height: 80
+=======
+<<<<<<<< Updated upstream:Assets/strawcatup.png.meta
+      name: strawcatup_0
+========
+      name: HomeBut_0
+>>>>>>>> Stashed changes:Assets/HomeBut.gif.meta
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 145
+        width: 567
+        height: 676
+>>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +178,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< Updated upstream
       spriteID: 498dd440b01f5b4f0800000000000000
       internalID: -813479128051361644
+=======
+<<<<<<<< Updated upstream:Assets/strawcatup.png.meta
+      spriteID: fdcc7069ed6c9fb30800000000000000
+      internalID: 4321703976740834527
+========
+      spriteID: 498dd440b01f5b4f0800000000000000
+      internalID: -813479128051361644
+>>>>>>>> Stashed changes:Assets/HomeBut.gif.meta
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -165,7 +208,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< Updated upstream
       HomeBut_0: -813479128051361644
+=======
+<<<<<<<< Updated upstream:Assets/strawcatup.png.meta
+      strawcatup_0: 4321703976740834527
+========
+      HomeBut_0: -813479128051361644
+>>>>>>>> Stashed changes:Assets/HomeBut.gif.meta
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
