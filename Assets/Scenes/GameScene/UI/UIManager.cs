@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.UIElements; // Required namespace for UI Toolkit
+using UnityEngine.SceneManagement;
+using System;
 
 public class GameSceneUIManager : MonoBehaviour
 {

@@ -119,12 +119,12 @@ TextureImporter:
       name: New Piskel-1.png 1_0
       rect:
         serializedVersion: 2
-        x: 359
-        y: 359
-        width: 182
-        height: 482
+        x: 1167
+        y: 623
+        width: 180
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,20 +141,42 @@ TextureImporter:
       name: New Piskel-1.png 1_1
       rect:
         serializedVersion: 2
-        x: 584
-        y: 359
-        width: 182
-        height: 482
+        x: 941
+        y: 375
+        width: 180
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163f08b2e6a1b5e4b8cc3181dcb12ca3
+      internalID: -7230880046780778771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel-1.png 1_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 360
+        width: 405
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: de6fb2688e0c6ab90800000000000000
-      internalID: -7230880046780778771
+      spriteID: 8ebcac221e27eef4c87e57ae38b9dd39
+      internalID: 1929638214
       vertices: []
       indices: 
       edges: []
@@ -163,7 +185,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e1b5eb91ccb35234bb0b5268d097b89e
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +193,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1500.0,"y":1500.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       New Piskel-1.png 1_0: -8592159128169060367
       New Piskel-1.png 1_1: -7230880046780778771
+      New Piskel-1.png 1_2: 1929638214
+      New Piskel-1.png 1_3: 292560844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
