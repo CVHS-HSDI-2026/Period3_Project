@@ -164,16 +164,16 @@ public class MainMenuSceneUIManager : MonoBehaviour
     void LoadSceneAsync(string sceneName)
     {
         //$"Scenes/{sceneName}/{sceneName}"
-        AsyncOperation operation = SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadScene(2);
 
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            Debug.Log(progress);
-            //if (progressBar != null)
-            //{
-            //    progressBar.value = progress;
-            //}
-        }
+        //while (!operation.isDone)
+        //{
+        //    float progress = Mathf.Clamp01(operation.progress / 0.9f);
+        //    Debug.Log(progress);
+        //    //if (progressBar != null)
+        //    //{
+        //    //    progressBar.value = progress;
+        //    //}
+        //}
     }
 }
