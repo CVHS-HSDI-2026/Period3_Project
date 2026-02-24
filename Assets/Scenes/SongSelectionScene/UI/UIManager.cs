@@ -31,6 +31,20 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
             container.Add(newButton);
         }
+        Button addMusicButton = root.Query<Button>("AddMusicButton");
+        if (addMusicButton != null)
+        {
+            addMusicButton.clicked += OnAddMusicButtonClicked; // Register the callback method
+        }
+        else
+        {
+            Debug.LogError("SongsButton not found in UXML document!");
+        }
+    }
+
+    void OnAddMusicButtonClicked()
+    {
+
     }
 
     // Update is called once per frame
