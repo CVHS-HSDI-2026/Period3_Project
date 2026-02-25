@@ -4,12 +4,13 @@ using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using System.Threading.Tasks;
+using System.Threading;
 
 public class MainMenuSceneUIManager : MonoBehaviour
 {
 	// The UXML asset should be assigned to the UIDocument component in the Inspector
 
-	async Task OnEnable()
+	void OnEnable()
 	{
 		// Get the UIDocument component
 		var uiDocument = GetComponent<UIDocument>();
@@ -60,41 +61,16 @@ public class MainMenuSceneUIManager : MonoBehaviour
 		{
 			Debug.LogError("RopeSkinsButton not found in UXML document!");
 		}
-
-		Image catImage = root.Query<Image>("JumpingCat");
-		if (catImage != null)
-		{
-			await JumpCatAsync(catImage);
-		}
 	}
-
-	private async Task JumpCatAsync(Image catImage)
-	{
-        int c = 0;
-        int frameCount = 50;
-        int direction = 1;
-        while (true)
-        {
-            if (c >= frameCount)
-            {
-                direction *= -1;
-            }
-            c += direction * c;
-            catImage.style.translate = new Translate(new Length(c, LengthUnit.Percent), new Length(0, LengthUnit.Pixel));
-            await Task.Delay(100);
-        }
-    }
 
 	private void OnPlayButtonClicked()
 	{
-		Debug.Log("PlayButton was clicked!");
-		LoadSceneAsync("GameScene");
+		SceneManager.LoadScene("Scenes/GamesScene/GamesScene");
 	}
 
 	private void OnCharacterSelectButtonClicked()
 	{
-		Debug.Log("CharacterSelectButton was clicked!");
-		LoadSceneAsync("CharacterSelectScene");
+		SceneManager.LoadScene("Scenes/CharacterSelectionScene/CharacterSelectionScene");
 	}
 
 	//private void OnSettingsButtonClicked()
@@ -105,8 +81,7 @@ public class MainMenuSceneUIManager : MonoBehaviour
 
 	private void OnSongsButtonClicked()
 	{
-		Debug.Log("SongsButton was clicked!");
-		LoadSceneAsync("SongSelectionScene");
+		SceneManager.LoadScene("Scenes/SongSelectionScene/SongSelection");
 	}
 
 	private void OnRopeSkinsButtonClicked()
@@ -174,19 +149,39 @@ public class MainMenuSceneUIManager : MonoBehaviour
 		}
 	}
 
-	void LoadSceneAsync(string sceneName)
-	{
-		//$"Scenes/{sceneName}/{sceneName}"
-		SceneManager.LoadScene(2);
+	float catVelocity = (float)(0.0);
+	float maxCatVelocity = 40;
+	int minCatHeight = 0;
+	float catHeight = 0;
+	float catAcceleration = (float)(-40);
+	float catGroundToleranceRange = 1;
+	Image catImage;
 
-		//while (!operation.isDone)
-		//{
-		//    float progress = Mathf.Clamp01(operation.progress / 0.9f);
-		//    Debug.Log(progress);
-		//    //if (progressBar != null)
-		//    //{
-		//    //    progressBar.value = progress;
-		//    //}
-		//}
-	}
+	void Start()
+	{
+        // Get the UIDocument component
+        var uiDocument = GetComponent<UIDocument>();
+
+        // Get the root visual element
+        var root = uiDocument.rootVisualElement;
+
+        catImage = root.Query<Image>("JumpingCat");
+    }
+
+    void FixedUpdate()
+	{
+		if (catImage != null)
+		{
+            if ((catHeight <= minCatHeight + catGroundToleranceRange / 2.0 && catHeight >= minCatHeight - catGroundToleranceRange / 2.0) && catVelocity != maxCatVelocity)
+			{
+				catHeight = minCatHeight;
+				catVelocity = maxCatVelocity;
+			} else {
+				catVelocity = catVelocity + catAcceleration * Time.fixedDeltaTime;				
+			}
+            catHeight += ((catVelocity * Time.fixedDeltaTime) + (catAcceleration * Time.fixedDeltaTime * Time.fixedDeltaTime / 2));
+			//Debug.Log($"Time: {Time.fixedDeltaTime}; Velocity: {catVelocity}; Height: {catHeight}");
+            catImage.style.translate = new Translate(new Length(0, LengthUnit.Pixel), new Length(-catHeight, LengthUnit.Percent));
+        }
+    }
 }
