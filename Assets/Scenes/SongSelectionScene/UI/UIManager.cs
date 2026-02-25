@@ -44,7 +44,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 
     void OnAddMusicButtonClicked()
     {
-        Debug.Log("Button Pressed")!
+        Debug.Log("Button Pressed!");
     }
 
     // Update is called once per frame
