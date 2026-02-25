@@ -12,7 +12,7 @@
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer" style="justify-content: flex-start;">
                 <ui:Button text="Play" name="PlayButton" class="StartButton"/>
-                <ui:Image source="project://database/Assets/catsprite.png?fileID=4210284959890277339&amp;guid=fb3ebf4ae3b4c7242b80964d3fcb1cc8&amp;type=3#catsprite_0" scale-mode="ScaleToFit" style="position: absolute; top: 40%; left: 0%; right: 0%; width: 100%; height: 60%; scale: 0.75 0.75;"/>
+                <ui:Image source="project://database/Assets/catsprite.png?fileID=4210284959890277339&amp;guid=fb3ebf4ae3b4c7242b80964d3fcb1cc8&amp;type=3#catsprite_0" scale-mode="ScaleToFit" name="JumpingCat" style="position: absolute; top: 40%; left: 0%; right: 0%; width: 100%; height: 60%; scale: 0.75 0.75;"/>
             </ui:VisualElement>
             <ui:VisualElement class="ButtonContainer">
                 <ui:Button text="Songs" name="SongsButton" class="ButtonContainerButton"/>
