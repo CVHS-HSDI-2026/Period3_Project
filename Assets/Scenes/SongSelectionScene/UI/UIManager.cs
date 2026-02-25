@@ -32,6 +32,8 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             container.Add(newButton);
         }
         Button addMusicButton = root.Query<Button>("AddMusicButton");
+        Button backButton = root.Query<Button>("BackButton");
+        backButton.clicked += () => Debug.Log($"Back Button was clicked");
         if (addMusicButton != null)
         {
             addMusicButton.clicked += OnAddMusicButtonClicked; // Register the callback method
