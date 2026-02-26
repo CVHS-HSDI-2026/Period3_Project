@@ -3,6 +3,7 @@ using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using SFB;
 public class SongSelectionSceneUIManager : MonoBehaviour
 {
     GameObject[] songs = new GameObject[20];
@@ -46,12 +47,26 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 
     void OnAddMusicButtonClicked()
     {
-        Debug.Log("Button Pressed!");
+        Debug.Log("Before opening");
+
+        var paths = StandaloneFileBrowser.OpenFilePanel(
+            "Select File",
+            "",
+            "",
+            false
+        );
+
+        Debug.Log("After opening");
+
+        if (paths.Length > 0)
+        {
+            Debug.Log("Selected: " + paths[0]);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
