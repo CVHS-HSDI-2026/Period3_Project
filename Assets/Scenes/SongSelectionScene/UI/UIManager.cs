@@ -3,6 +3,7 @@ using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using System.IO;
 using SFB;
 public class SongSelectionSceneUIManager : MonoBehaviour
 {
@@ -47,21 +48,32 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 
     void OnAddMusicButtonClicked()
     {
-        Debug.Log("Before opening");
-
         var paths = StandaloneFileBrowser.OpenFilePanel(
-            "Select File",
+            "Select Song",
             "",
-            "",
+            new[] { new ExtensionFilter("Audio Files", "wav", "mp3") },
             false
         );
 
-        Debug.Log("After opening");
+        if (paths.Length == 0)
+            return;
 
-        if (paths.Length > 0)
+        string selectedPath = paths[0];
+
+        string extension = Path.GetExtension(selectedPath).ToLower();
+
+        if (extension != ".wav" && extension != ".mp3")
         {
-            Debug.Log("Selected: " + paths[0]);
+            Debug.Log("Invalid file type!");
+            return;
         }
+
+        string fileName = Path.GetFileName(selectedPath);
+        string destinationPath = Path.Combine(Application.persistentDataPath, fileName);
+
+        File.Copy(selectedPath, destinationPath, true);
+
+        Debug.Log("Song stored at: " + destinationPath);
     }
 
     // Update is called once per frame
