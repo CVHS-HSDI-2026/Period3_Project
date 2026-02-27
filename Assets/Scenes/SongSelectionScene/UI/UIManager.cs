@@ -8,6 +8,14 @@ using SFB;
 public class SongSelectionSceneUIManager : MonoBehaviour
 {
     GameObject[] songs = new GameObject[20];
+    
+	float catVelocity = (float)(0.0);
+	float maxCatVelocity = 30;
+	int minCatHeight = 0;
+	float catHeight = 0;
+	float catAcceleration = (float)(-40);
+	float catGroundToleranceRange = 1;
+	Image catImage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +27,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
         var uiDocument = GetComponent<UIDocument>();
         var root = uiDocument.rootVisualElement;
         var container = root.Q<VisualElement>("unity-content-container");
-
+           catImage = root.Query<Image>("JumpingCat");
         for (int i = 0; i < 20; i++)
         {
             Button newButton = new Button();
@@ -45,7 +53,22 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             Debug.LogError("SongsButton not found in UXML document!");
         }
     }
-
+    void FixedUpdate()
+	{
+		if (catImage != null)
+		{
+            if ((catHeight <= minCatHeight + catGroundToleranceRange / 2.0 && catHeight >= minCatHeight - catGroundToleranceRange / 2.0) && catVelocity != maxCatVelocity)
+			{
+				catHeight = minCatHeight;
+				catVelocity = maxCatVelocity;
+			} else {
+				catVelocity = (catVelocity + catAcceleration * Time.fixedDeltaTime);				
+			}
+            catHeight += ((catVelocity * Time.fixedDeltaTime) + (catAcceleration * Time.fixedDeltaTime * Time.fixedDeltaTime / 2));
+			//Debug.Log($"Time: {Time.fixedDeltaTime}; Velocity: {catVelocity}; Height: {catHeight}");
+            catImage.style.translate = new Translate(new Length(0, LengthUnit.Pixel), new Length(-catHeight, LengthUnit.Percent));
+        }
+    }
     void OnAddMusicButtonClicked()
     {
         var paths = StandaloneFileBrowser.OpenFilePanel(
