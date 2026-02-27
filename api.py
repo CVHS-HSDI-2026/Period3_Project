@@ -8,7 +8,7 @@ import midiutil
 import io
 import pretty_midi
 import json
-
+import convert2
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav'}
 secret_key = os.urandom(24).hex() 
@@ -28,111 +28,8 @@ app.config['DOWNLOAD_FOLDER'] = DOWNLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
 
-def hertzToMidiNotes(frequency):
-    if frequency <= 0:
-        return None #0?
-    return int(round(69 + 12 * np.log2(frequency / 440.0)))
 
-def wavToMidi(wavFile, hopLength=512):
-    signal, sampleRate = librosa.load(wavFile)
 
-    freq, soundPresent, soundProbability = librosa.pyin(
-        y=signal,
-        fmin=librosa.note_to_hz('C2'),
-        fmax=librosa.note_to_hz('C7'),
-        sr=sampleRate,
-        hop_length=hopLength
-    )
-
-    tempo, beat_frames = librosa.beat.beat_track(y=signal, sr=sampleRate)
-    if isinstance(tempo, np.ndarray):
-        tempo = float(tempo[0])
-    else:
-        tempo = float(tempo)
-    seconds_per_beat = 60.0 / tempo
-
-    midi = midiutil.MIDIFile(1)
-    track = 0
-    channel = 0
-    midi.addTempo(track, 0, tempo)
-
-    frameTimes = librosa.frames_to_time(
-        np.arange(len(freq)),
-        sr=sampleRate,
-        hop_length=hopLength
-    )
-
-    notes = []
-    current_note = None
-    min_duration = 0.08
-
-    for i, (f, time) in enumerate(zip(freq, frameTimes)):
-
-        if soundPresent[i] and not np.isnan(f) and f > 0:
-            midi_note = hertzToMidiNotes(f)
-
-            if current_note is None:
-                current_note = midi_note
-                note_start_time = time
-
-            elif midi_note != current_note:
-                duration = time - note_start_time
-                if duration > min_duration:
-                    notes.append((current_note, note_start_time, duration))
-                current_note = midi_note
-                note_start_time = time
-
-        else:
-            if current_note is not None:
-                duration = time - note_start_time
-                if duration > min_duration:
-                    notes.append((current_note, note_start_time, duration))
-                current_note = None
-
-    if current_note is not None:
-        duration = frameTimes[-1] - note_start_time
-        if duration > min_duration:
-            notes.append((current_note, note_start_time, duration))
-
-    velocity = 100
-    for note, start_time, duration in notes:
-        start_beat = start_time / seconds_per_beat
-        duration_beats = duration / seconds_per_beat
-        midi.addNote(track, channel, note, start_beat, duration_beats, velocity)
-
-    midi_buffer = io.BytesIO()
-    midi.writeFile(midi_buffer)
-    midi_bytes = midi_buffer.getvalue()
-
-    return midi_bytes
-
-def midi_to_json(midi_bytes):
-    midi_data = pretty_midi.PrettyMIDI(io.BytesIO(midi_bytes))
-
-    midi_dict = {
-        "tempo": float(midi_data.estimate_tempo()),
-        "instruments": []
-    }
-
-    for instrument in midi_data.instruments:
-        instrument_data = {
-            "name": str(instrument.name),
-            "program": int(instrument.program),
-            "is_drum": bool(instrument.is_drum),
-            "notes": []
-        }
-
-        for note in instrument.notes:
-            instrument_data["notes"].append({
-                "pitch": int(note.pitch),
-                "start": float(note.start),
-                "end": float(note.end),
-                "velocity": int(note.velocity)
-            })
-
-        midi_dict["instruments"].append(instrument_data)
-
-    return midi_dict
 
 
 
@@ -140,10 +37,10 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 def audio_splicing(filename):
-    midi_bytes = wavToMidi(filename)
+    midi_bytes = convert2.wav_to_rhythm_notes(filename, difficulty = "medium", snap_to_beats=True)
+    
 
 
-    midi_json = midi_to_json(midi_bytes)
   #  output_path = os.path.join(
   #  app.config['DOWNLOAD_FOLDER'],
   #  os.path.basename(filename) + "_output.json"
@@ -151,7 +48,7 @@ def audio_splicing(filename):
 
 #    with open(output_path) as f:
 #        json.dump(midi_json, f, indent = 4)
-    return jsonify(midi_json)
+    return jsonify(midi_bytes)
 @app.route('/employees', methods=['GET'])
 
 def get_employees():
