@@ -21,17 +21,18 @@ Button.pausePlay {
     flex-grow: 1;
     position: absolute;
     background-image: url("project://database/Assets/indicatorbar.png?fileID=1590599844135651994&guid=a83a6934c43802a49a1112624f937ab4&type=3#indicatorbar_0");
-    left: 532px;
+    left: -62%;
     height: 38px;
     width: 16px;
     -unity-background-scale-mode: scale-to-fit;
 }
 
 .unity-indicator-bar__end-position {
-    translate: 452px 0;
+    translate: 640% 0;
+    left: 130%;
 }
 
 .unity-progress-bar__container {
-	min-height: 500%;
-	max-height: 500%;
+    min-height: 500%;
+    max-height: 500%;
 }
