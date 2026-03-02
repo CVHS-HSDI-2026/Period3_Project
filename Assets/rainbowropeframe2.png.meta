@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 997354e1e88c941fc844db57873e10dd
+guid: 2d507c1b4d5dabb49b59e0fce0233e52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3483574656620730349
-    second: New Piskel-1.png (2)_0
+      213: -1962374889850219260
+    second: rainbowropeframe2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-1.png (2)_0
+      name: rainbowropeframe2_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 239
-        width: 407
-        height: 152
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 318619b7e4bd7afc0800000000000000
-      internalID: -3483574656620730349
+      spriteID: 405d45e4f6e34c4e0800000000000000
+      internalID: -1962374889850219260
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Piskel-1.png (2)_0: -3483574656620730349
+      rainbowropeframe2_0: -1962374889850219260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
