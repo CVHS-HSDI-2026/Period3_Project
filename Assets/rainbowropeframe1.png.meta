@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 17300614f52064124873a01943bd6842
+=======
+guid: df1446aaba440484ab9e3f38cadba734
+>>>>>>> refs/remotes/origin/main
 TextureImporter:
   internalIDToNameTable:
   - first:
