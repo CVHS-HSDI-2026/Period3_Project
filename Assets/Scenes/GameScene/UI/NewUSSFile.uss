@@ -30,6 +30,7 @@ Button.pausePlay {
 .unity-indicator-bar__end-position {
     translate: 640% 0;
     left: 130%;
+    transition-duration: 0s;
 }
 
 .unity-progress-bar__container {
