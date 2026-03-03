@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: rainbowrope AnimTile
+  m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.Tilemaps.AnimatedTile
+  m_AnimatedSprites:
+  - {fileID: 2393772919064131834, guid: df1446aaba440484ab9e3f38cadba734, type: 3}
+  - {fileID: -1962374889850219260, guid: 2d507c1b4d5dabb49b59e0fce0233e52, type: 3}
+  - {fileID: -9131640037229742991, guid: c6ed3cdbdf34b8746afeacd06a5ec9e8, type: 3}
+  - {fileID: -6339249143783484992, guid: faba1ffe62e9b6748a9f338eab5e0fea, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
