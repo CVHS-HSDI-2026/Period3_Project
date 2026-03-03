@@ -3,5 +3,10 @@
     <ui:VisualElement style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Pixelify%20Sans/static/PixelifySans-Medium.ttf?fileID=12800000&amp;guid=715f6df3b9287414188cfb52df249ec9&amp;type=3#PixelifySans-Medium&quot;); min-height: 0; max-height: 120px;">
         <ui:Label text="Character" style="color: rgb(255, 0, 163); font-size: 100px; -unity-text-outline-width: 2px; -unity-text-outline-color: rgb(0, 0, 0); -unity-font-definition: url(&quot;project://database/Assets/Fonts/Pixelify%20Sans/static/PixelifySans-SemiBold.ttf?fileID=12800000&amp;guid=3d49875c1a61f5540a4a99ac336cf11c&amp;type=3#PixelifySans-SemiBold&quot;); height: 125px; align-self: center;"/>
     </ui:VisualElement>
-    <ui:VisualElement style="flex-grow: 1;"/>
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Image name="charImage" style="background-image: url(&quot;project://database/Assets/catsprite.png?fileID=2800000&amp;guid=fb3ebf4ae3b4c7242b80964d3fcb1cc8&amp;type=3#catsprite&quot;); height: 232px; width: 246px; background-position-x: center; right: 269px; left: 235px; position: absolute; top: 22px;"/>
+        <ui:Image name="LeftArrow" style="background-image: url(&quot;project://database/Assets/Screenshot_2026-03-02_at_12.20.01_PM-removebg-preview.png?fileID=2800000&amp;guid=04bb5539522ef441baacf85fc1c7d548&amp;type=3#Screenshot_2026-03-02_at_12.20.01_PM-removebg-preview&quot;); height: 174px; width: 192px; position: absolute; top: 58px; left: 88px;"/>
+        <ui:Image name="RightArrow" style="position: absolute; background-image: url(&quot;project://database/Assets/Screenshot_2026-03-02_at_12.25.04_PM-removebg-preview.png?fileID=2800000&amp;guid=30d079a95776143d0a6240fe59b3b718&amp;type=3#Screenshot_2026-03-02_at_12.25.04_PM-removebg-preview&quot;); height: 97px; width: 101px; top: 92px; left: 470px;"/>
+    </ui:VisualElement>
+    <ui:Image style="background-image: url(&quot;project://database/Assets/catsprite.png?fileID=2800000&amp;guid=fb3ebf4ae3b4c7242b80964d3fcb1cc8&amp;type=3#catsprite&quot;); height: 0;"/>
 </ui:UXML>
