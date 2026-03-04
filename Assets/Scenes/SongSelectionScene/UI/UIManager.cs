@@ -3,10 +3,14 @@ using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.Networking;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using SFB;
 public class SongSelectionSceneUIManager : MonoBehaviour
 {
+    private string serverurl = " http://127.0.0.1:5000";
     GameObject[] songs = new GameObject[20];
     
 	float catVelocity = (float)(0.0);
@@ -19,10 +23,11 @@ public class SongSelectionSceneUIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        string serverurl = "http://127.0.0.1:5000";
         //for(int i = 0; i < 20; i ++){
-          //  songs[i] = new GameObject();
-            //songs[i].transform.SetParent(GameObject.Find("Unity-Content-Container").transform, false);
- 
+        //  songs[i] = new GameObject();
+        //songs[i].transform.SetParent(GameObject.Find("Unity-Content-Container").transform, false);
+
         //}
         var uiDocument = GetComponent<UIDocument>();
         var root = uiDocument.rootVisualElement;
@@ -51,6 +56,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
         Button backButton = root.Query<Button>("BackButton");
         backButton.clicked += () => SceneManager.LoadScene("Scenes/MainMenuScene/MainMainScene");
         if (addMusicButton != null)
+
         {
             addMusicButton.clicked += OnAddMusicButtonClicked; // Register the callback method
         }
@@ -99,15 +105,42 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 
         string fileName = Path.GetFileName(selectedPath);
         string destinationPath = Path.Combine(Application.persistentDataPath, fileName);
-
+        StartUpload(destinationPath);
         File.Copy(selectedPath, destinationPath, true);
 
         Debug.Log("Song stored at: " + destinationPath);
+        void Start()
+        {
+
+        }
+    }
+    void StartUpload(String file)
+    {
+        StartCoroutine(Upload(file));
     }
 
+    IEnumerator Upload(String file)
+    {
+        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
+        formData.Add(new MultipartFormDataSection("field1=foo&field2=bar"));
+        formData.Add(new MultipartFormFileSection("my file data", file));
+
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:5000", formData);
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            Debug.Log("Form upload complete!");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
 
     }
 }
+
