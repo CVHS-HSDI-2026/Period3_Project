@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: b54bdbce71ca3e44292e34da11493387
+<<<<<<< HEAD
+guid: 13728f609429f4e5bb365ce76da55efa
+=======
+guid: 85c1256475b6a62498686b0964b1c5fd
+>>>>>>> refs/remotes/origin/main
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8381654103437381707
-    second: Statbar_0
+      213: 4017545303213320725
+    second: BasicRopeF3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +104,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Statbar_0
+      name: BasicRopeF3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 720
-        width: 1350
-        height: 165
+        x: 29
+        y: 194
+        width: 407
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b409499cffd915470800000000000000
-      internalID: 8381654103437381707
+      spriteID: 51aa11bda2031c730800000000000000
+      internalID: 4017545303213320725
       vertices: []
       indices: 
       edges: []
@@ -125,7 +129,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: efb7d41f1fddd1041bbb18bb7d244417
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -133,11 +137,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Statbar_0: 8381654103437381707
+      BasicRopeF3_0: 4017545303213320725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

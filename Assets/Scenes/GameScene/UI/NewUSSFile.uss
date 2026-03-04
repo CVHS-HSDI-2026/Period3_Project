@@ -1,6 +1,39 @@
-VisualElement {
+Progress_Bar.levelProgress {
 }
 
 Button.pausePlay {
     display: flex;
+}
+
+.unity-progress-bar__progress {
+    background-image: url("project://database/Assets/morestate.png?fileID=7601105413478451933&guid=b72340a57188175498b47016c13c6a12&type=3#morestate_0");
+}
+
+.unity-progress-bar__background {
+    background-color: transparent;
+}
+
+.unity-base-slider__tracker {
+    background-color: transparent;
+}
+
+.unity-indicator-bar__start-position {
+    flex-grow: 1;
+    position: absolute;
+    background-image: url("project://database/Assets/indicatorbar.png?fileID=1590599844135651994&guid=a83a6934c43802a49a1112624f937ab4&type=3#indicatorbar_0");
+    left: -62%;
+    height: 38px;
+    width: 16px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.unity-indicator-bar__end-position {
+    translate: 640% 0;
+    left: 130%;
+    transition-duration: 0s;
+}
+
+.unity-progress-bar__container {
+    min-height: 500%;
+    max-height: 500%;
 }

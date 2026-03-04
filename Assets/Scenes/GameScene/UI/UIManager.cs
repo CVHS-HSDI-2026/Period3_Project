@@ -14,6 +14,10 @@ public class GameSceneUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Button jumpButton = root.Query<Button>("JumpButton");
+        if(jumpButton != null)
+        {
+            Debug.Log("Jump");
+        }
     }
 }
