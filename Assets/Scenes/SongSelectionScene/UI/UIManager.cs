@@ -43,12 +43,15 @@ public class SongSelectionSceneUIManager : MonoBehaviour
          newButton.style.width = new Length(10, LengthUnit.Percent);  // 50% width
             //newButton.style.paddingTop = new Length(20, LengthUnit.Percent);
             newButton.style.height = new Length(50, LengthUnit.Percent);
+            newButton.style.fontSize = 32;
+            newButton.style.unityFont = Fonts.Load<Font>("PixelifySans-Regular");
             newButton.style.marginLeft = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
             newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
             butText.style.marginTop = new Length(16, LengthUnit.Percent);
-             butText.style.marginLeft = new Length(10f, LengthUnit.Percent);
+            butText.style.marginLeft = new Length(10f, LengthUnit.Percent);
+            butText.style.marginRight = new Length(10f, LengthUnit.Percent);
             container.Add(newButton);
             container.Add(butText);
         }
