@@ -56,20 +56,27 @@ def get_employees():
 
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def upload_file():
+    
     if request.method == 'POST':
         # check if the post request has the file part
+        
         if 'file' not in request.files:
+            print('nofilep part')
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
+        print(file.filename)
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
             flash('No selected file')
+            print("No selected file")
             return redirect(request.url)
         if file and allowed_file(file.filename):
+            print(request.files['file'])
+            print(request.form)
             filename = secure_filename(file.filename)
 
 
@@ -91,6 +98,7 @@ def upload_file():
             #)
             #return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
             return output_json
+        print('fail')
     return "failed"
 
 if __name__ == '__main__':
