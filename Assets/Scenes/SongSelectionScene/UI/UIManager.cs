@@ -47,6 +47,8 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
             newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
+            newButton.RegisterCallback<MouseEnterEvent>(e => newButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+            newButton.RegisterCallback<MouseLeaveEvent>(e => newButton.style.scale = new Scale(Vector3.one));
             container.Add(newButton);
         }
         Button addMusicButton = root.Query<Button>("AddMusicButton");
@@ -155,7 +157,18 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             Debug.Log(www.error);
         }
     }
-    // Update is called once per frame
+
+    void OnEnable() {
+        var uiDocument = GetComponent<UIDocument>();
+        var root = uiDocument.rootVisualElement;
+        Button addMusicButton = root.Query<Button>("AddMusicButton");
+        Button backButton = root.Query<Button>("BackButton");
+        backButton.RegisterCallback<MouseEnterEvent>(e => backButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        backButton.RegisterCallback<MouseLeaveEvent>(e => backButton.style.scale = new Scale(Vector3.one));
+        addMusicButton.RegisterCallback<MouseEnterEvent>(e => addMusicButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        addMusicButton.RegisterCallback<MouseLeaveEvent>(e => addMusicButton.style.scale = new Scale(Vector3.one));
+    }
+        // Update is called once per frame
     void Update()
     {
 

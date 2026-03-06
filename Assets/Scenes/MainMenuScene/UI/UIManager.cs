@@ -29,6 +29,9 @@ public class MainMenuSceneUIManager : MonoBehaviour
 			Debug.LogError("PlayButton not found in UXML document!");
 		}
 
+        playButton.RegisterCallback<MouseEnterEvent>(e => playButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        playButton.RegisterCallback<MouseLeaveEvent>(e => playButton.style.scale = new Scale(Vector3.one));
+
 		// Get reference to button in code
 		Button characterSelectButton = root.Query<Button>("CharacterSelectButton");
 		if (characterSelectButton != null)
@@ -39,7 +42,8 @@ public class MainMenuSceneUIManager : MonoBehaviour
 		{
 			Debug.LogError("CharacterSelectButton not found in UXML document!");
 		}
-
+		characterSelectButton.RegisterCallback<MouseEnterEvent>(e => characterSelectButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        characterSelectButton.RegisterCallback<MouseLeaveEvent>(e =>characterSelectButton.style.scale = new Scale(Vector3.one));
 		// Get reference to button in code
 		Button songsButton = root.Query<Button>("SongsButton");
 		if (songsButton != null)
@@ -61,11 +65,13 @@ public class MainMenuSceneUIManager : MonoBehaviour
 		{
 			Debug.LogError("RopeSkinsButton not found in UXML document!");
 		}
+		ropeSkinsButton.RegisterCallback<MouseEnterEvent>(e => ropeSkinsButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        ropeSkinsButton.RegisterCallback<MouseLeaveEvent>(e => ropeSkinsButton.style.scale = new Scale(Vector3.one));
 	}
 
 	private void OnPlayButtonClicked()
 	{
-		SceneManager.LoadScene("Scenes/GamesScene/GamesScene");
+		SceneManager.LoadScene("Scenes/SongSelectionScene/SongSelection");
 	}
 
 	private void OnCharacterSelectButtonClicked()
