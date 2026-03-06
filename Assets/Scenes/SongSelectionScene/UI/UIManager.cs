@@ -12,7 +12,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 {
     private string serverurl = " http://127.0.0.1:5000";
     GameObject[] songs = new GameObject[20];
-    
+    public Font pixel;
 	float catVelocity = (float)(0.0);
 	float maxCatVelocity = 30;
 	int minCatHeight = 0;
@@ -37,23 +37,17 @@ public class SongSelectionSceneUIManager : MonoBehaviour
         {
             Button newButton = new Button();
             newButton.text = $"Song NAMES!!";
-            Label butText = new Label();
-            butText.text = $"WORRRRRKKKKKKKK";
             int index = i; // capture loop variable
          newButton.style.width = new Length(10, LengthUnit.Percent);  // 50% width
             //newButton.style.paddingTop = new Length(20, LengthUnit.Percent);
             newButton.style.height = new Length(50, LengthUnit.Percent);
-            newButton.style.fontSize = 32;
-            newButton.style.unityFont = Fonts.Load<Font>("PixelifySans-Regular");
+            newButton.style.fontSize = 24;
+            newButton.style.unityFont = pixel;
             newButton.style.marginLeft = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
             newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
-            butText.style.marginTop = new Length(16, LengthUnit.Percent);
-            butText.style.marginLeft = new Length(10f, LengthUnit.Percent);
-            butText.style.marginRight = new Length(10f, LengthUnit.Percent);
             container.Add(newButton);
-            container.Add(butText);
         }
         Button addMusicButton = root.Query<Button>("AddMusicButton");
         Button backButton = root.Query<Button>("BackButton");
