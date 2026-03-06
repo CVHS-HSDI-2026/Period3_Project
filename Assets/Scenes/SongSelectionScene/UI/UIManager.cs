@@ -118,23 +118,44 @@ public class SongSelectionSceneUIManager : MonoBehaviour
     {
         StartCoroutine(Upload(file));
     }
-
+    [System.Serializable]
+    public class ResponseData
+    {
+        public string message;
+        public int score;
+    }
     IEnumerator Upload(String file)
     {
+        byte[] songdata = File.ReadAllBytes(file);
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
-        formData.Add(new MultipartFormDataSection("field1=foo&field2=bar"));
-        formData.Add(new MultipartFormFileSection("my file data", file));
-
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost:5000", formData);
+        string nameOfFile = Path.GetFileName(file);
+        formData.Add(new MultipartFormFileSection("file", songdata, nameOfFile, "audio/wav"));
+        Debug.Log("file size:" + songdata.Length);
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:5000/", formData);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.chunkedTransfer = false;
+        www.SetRequestHeader("Accept", "application/json");
         yield return www.SendWebRequest();
 
-        if (www.result != UnityWebRequest.Result.Success)
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log(www.error);
+            string jsonResponse = www.downloadHandler.text;
+
+            Debug.Log("Form upload complete!");
+            Debug.Log("Response length: " + www.downloadHandler.data.Length);
+            Debug.Log("Raw text: [" + www.downloadHandler.text + "]");
+            Debug.Log("Result: " + www.result);
+            Debug.Log("Server Response: " + jsonResponse);
+
+            ResponseData data = JsonUtility.FromJson<ResponseData>(jsonResponse);
+            string jsonPath = Path.Combine(Application.persistentDataPath, (nameOfFile + ".json"));
+            File.WriteAllText(jsonPath, jsonResponse);
+            Debug.Log("saved to :" + jsonPath);
         }
         else
         {
-            Debug.Log("Form upload complete!");
+            
+            Debug.Log(www.error);
         }
     }
     // Update is called once per frame
