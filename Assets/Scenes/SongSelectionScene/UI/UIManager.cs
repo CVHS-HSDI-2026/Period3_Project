@@ -12,7 +12,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 {
     private string serverurl = " http://127.0.0.1:5000";
     GameObject[] songs = new GameObject[20];
-    
+    public Font pixel;
 	float catVelocity = (float)(0.0);
 	float maxCatVelocity = 30;
 	int minCatHeight = 0;
@@ -37,20 +37,19 @@ public class SongSelectionSceneUIManager : MonoBehaviour
         {
             Button newButton = new Button();
             newButton.text = $"Song NAMES!!";
-            Label butText = new Label();
-            butText.text = $"WORRRRRKKKKKKKK";
             int index = i; // capture loop variable
          newButton.style.width = new Length(10, LengthUnit.Percent);  // 50% width
             //newButton.style.paddingTop = new Length(20, LengthUnit.Percent);
             newButton.style.height = new Length(50, LengthUnit.Percent);
+            newButton.style.fontSize = 24;
+            newButton.style.unityFont = pixel;
             newButton.style.marginLeft = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
             newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
-            butText.style.marginTop = new Length(16, LengthUnit.Percent);
-             butText.style.marginLeft = new Length(10f, LengthUnit.Percent);
+            newButton.RegisterCallback<MouseEnterEvent>(e => newButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+            newButton.RegisterCallback<MouseLeaveEvent>(e => newButton.style.scale = new Scale(Vector3.one));
             container.Add(newButton);
-            container.Add(butText);
         }
         Button addMusicButton = root.Query<Button>("AddMusicButton");
         Button backButton = root.Query<Button>("BackButton");
@@ -118,26 +117,58 @@ public class SongSelectionSceneUIManager : MonoBehaviour
     {
         StartCoroutine(Upload(file));
     }
-
+    [System.Serializable]
+    public class ResponseData
+    {
+        public string message;
+        public int score;
+    }
     IEnumerator Upload(String file)
     {
+        byte[] songdata = File.ReadAllBytes(file);
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
-        formData.Add(new MultipartFormDataSection("field1=foo&field2=bar"));
-        formData.Add(new MultipartFormFileSection("my file data", file));
-
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost:5000", formData);
+        string nameOfFile = Path.GetFileName(file);
+        formData.Add(new MultipartFormFileSection("file", songdata, nameOfFile, "audio/wav"));
+        Debug.Log("file size:" + songdata.Length);
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:5000/", formData);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.chunkedTransfer = false;
+        www.SetRequestHeader("Accept", "application/json");
         yield return www.SendWebRequest();
 
-        if (www.result != UnityWebRequest.Result.Success)
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log(www.error);
+            string jsonResponse = www.downloadHandler.text;
+
+            Debug.Log("Form upload complete!");
+            Debug.Log("Response length: " + www.downloadHandler.data.Length);
+            Debug.Log("Raw text: [" + www.downloadHandler.text + "]");
+            Debug.Log("Result: " + www.result);
+            Debug.Log("Server Response: " + jsonResponse);
+
+            ResponseData data = JsonUtility.FromJson<ResponseData>(jsonResponse);
+            string jsonPath = Path.Combine(Application.persistentDataPath, (nameOfFile + ".json"));
+            File.WriteAllText(jsonPath, jsonResponse);
+            Debug.Log("saved to :" + jsonPath);
         }
         else
         {
-            Debug.Log("Form upload complete!");
+            
+            Debug.Log(www.error);
         }
     }
-    // Update is called once per frame
+
+    void OnEnable() {
+        var uiDocument = GetComponent<UIDocument>();
+        var root = uiDocument.rootVisualElement;
+        Button addMusicButton = root.Query<Button>("AddMusicButton");
+        Button backButton = root.Query<Button>("BackButton");
+        backButton.RegisterCallback<MouseEnterEvent>(e => backButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        backButton.RegisterCallback<MouseLeaveEvent>(e => backButton.style.scale = new Scale(Vector3.one));
+        addMusicButton.RegisterCallback<MouseEnterEvent>(e => addMusicButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
+        addMusicButton.RegisterCallback<MouseLeaveEvent>(e => addMusicButton.style.scale = new Scale(Vector3.one));
+    }
+        // Update is called once per frame
     void Update()
     {
 

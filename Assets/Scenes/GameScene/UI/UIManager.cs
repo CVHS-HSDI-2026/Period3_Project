@@ -49,7 +49,7 @@ public class GameSceneUIManager : MonoBehaviour
 
     private void OnJumpButtonClicked()
     {
-        Debug.Log("Jump");
+        Debug.Log("Jump"); // temporary
     }
 
     private void OnPlayButtonClicked()
