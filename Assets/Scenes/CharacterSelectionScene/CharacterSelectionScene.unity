@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 5e40e7f243a24e94789bc8af8748688e, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: e4bb9d7859979f14ca7fcb5655634624, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 3c0aee787576e2d45b9ffea4211c9b25, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1
@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6b3f7243778b64db6a151d82c05330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameSceneUIManager
+  RopeRenderTexture: {fileID: 0}
 --- !u!1 &1418590330
 GameObject:
   m_ObjectHideFlags: 0
