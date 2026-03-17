@@ -11,12 +11,7 @@ public class NoteObject : MonoBehaviour
 
     void Start()
     {
-        Color[] laneColors = {
-            Color.blue,
-            Color.red,
-            Color.yellow
-        };
-        GetComponent<SpriteRenderer>().color = laneColors[lane];
+        GetComponent<SpriteRenderer>().color = Color.cyan;
     }
 
     void Update()

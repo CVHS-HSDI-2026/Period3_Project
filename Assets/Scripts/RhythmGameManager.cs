@@ -11,13 +11,16 @@ public class RhythmGameManager : MonoBehaviour
     public Transform spawnPoint;
     public AudioSource musicSource;
 
+    [Header("Song Files")]
+    public string mp3FileName = "01. Bad Apple!!.mp3";
+    public string jsonFileName = "01. Bad Apple!!.json";
+
     [Header("Timing")]
     public float approachTime = 2.0f;
     public float hitWindow = 0.2f;
 
-    private RhythmData rhythmData;
-    private List<RhythmNote> upcomingNotes;
-    private int nextNoteIndex = 0;
+    private List<float> upcomingEvents = new List<float>();
+    private int nextEventIndex = 0;
     private float songStartTime;
     private bool gameStarted = false;
 
@@ -29,32 +32,34 @@ public class RhythmGameManager : MonoBehaviour
 
     void LoadRhythmData()
     {
-        string path = Path.Combine(Application.streamingAssetsPath,
-                                   "01. Bad Apple!!_rhythm.json");
-        string json = File.ReadAllText(path);
-        rhythmData = JsonUtility.FromJson<RhythmData>(json);
+        string path = Path.Combine(Application.streamingAssetsPath, jsonFileName);
 
-        // Filter notes too close together
-        var filtered = new List<RhythmNote>();
-        float lastTime = -1f;
-        foreach (var note in rhythmData.notes)
+        if (!File.Exists(path))
         {
-            if (note.time - lastTime >= 0.2f)
+            Debug.LogError($"JSON not found: {path}");
+            return;
+        }
+
+        string json = File.ReadAllText(path);
+        RhythmData rhythmData = JsonUtility.FromJson<RhythmData>(json);
+
+        // Filter events too close together
+        float lastTime = -1f;
+        foreach (float t in rhythmData.events)
+        {
+            if (t - lastTime >= 0.2f)
             {
-                filtered.Add(note);
-                lastTime = note.time;
+                upcomingEvents.Add(t);
+                lastTime = t;
             }
         }
 
-        upcomingNotes = filtered;
-        Debug.Log($"Loaded {upcomingNotes.Count} notes (filtered from {rhythmData.note_count}) at {rhythmData.tempo} BPM");
+        Debug.Log($"Loaded {upcomingEvents.Count} events at {rhythmData.tempo} BPM");
     }
 
     IEnumerator LoadAudioAndStart()
     {
-        string filePath = Path.Combine(
-            Application.streamingAssetsPath, "01. Bad Apple!!.mp3"
-        );
+        string filePath = Path.Combine(Application.streamingAssetsPath, mp3FileName);
         string audioPath = new System.Uri(filePath).AbsoluteUri;
 
         using (var www = new UnityEngine.Networking.UnityWebRequest(audioPath))
@@ -95,11 +100,11 @@ public class RhythmGameManager : MonoBehaviour
 
         float songTime = Time.time - songStartTime;
 
-        while (nextNoteIndex < upcomingNotes.Count &&
-               upcomingNotes[nextNoteIndex].time <= songTime + approachTime)
+        while (nextEventIndex < upcomingEvents.Count &&
+               upcomingEvents[nextEventIndex] <= songTime + approachTime)
         {
-            SpawnNote(upcomingNotes[nextNoteIndex]);
-            nextNoteIndex++;
+            SpawnNote(upcomingEvents[nextEventIndex]);
+            nextEventIndex++;
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
@@ -108,13 +113,13 @@ public class RhythmGameManager : MonoBehaviour
         }
     }
 
-    void SpawnNote(RhythmNote noteData)
+    void SpawnNote(float eventTime)
     {
         GameObject noteObj = Instantiate(notePrefab, spawnPoint.position,
                                          Quaternion.identity);
         NoteObject note = noteObj.GetComponent<NoteObject>();
-        note.targetTime = noteData.time;
-        note.lane = noteData.lane;
+        note.targetTime = eventTime;
+        note.lane = 0;
     }
 
     void TryHit(float songTime)
