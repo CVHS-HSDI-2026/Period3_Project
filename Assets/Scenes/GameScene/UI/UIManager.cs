@@ -8,6 +8,8 @@ public class GameSceneUIManager : MonoBehaviour
     Button playButton;
     Button pauseButton;
 
+    public RenderTexture RopeRenderTexture;
+
     private void OnEnable()
     {
         // Get the UIDocument component
@@ -49,7 +51,7 @@ public class GameSceneUIManager : MonoBehaviour
 
     private void OnJumpButtonClicked()
     {
-        Debug.Log("Jump");
+        Debug.Log("Jump"); // temporary
     }
 
     private void OnPlayButtonClicked()
@@ -67,7 +69,23 @@ public class GameSceneUIManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //var uiDocument = GetComponent<UIDocument>();
+
+        //VisualElement root = uiDocument.rootVisualElement;
+
+        //VisualElement ropeRenderImage = root.Q<VisualElement>("RopeRenderer");
+
+        //if (ropeRenderImage != null)
+        //{
+        //    if (RopeRenderTexture != null)
+        //    {
+        //        ropeRenderImage.style.backgroundImage = new StyleBackground(RopeRenderTexture);
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.LogError("Could not find visual element with name: " + "RopeRenderer");
+        //}
     }
 
     // Update is called once per frame
