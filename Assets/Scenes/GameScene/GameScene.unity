@@ -841,6 +841,8 @@ MonoBehaviour:
   notePrefab: {fileID: 626150054767672575, guid: 156b92c7476f0b742916907605146fd0, type: 3}
   spawnPoint: {fileID: 1852496551}
   musicSource: {fileID: 1654293151}
+  mp3FileName: 01. Bad Apple!!.mp3
+  jsonFileName: 01. Bad Apple!!_rhythm.json
   approachTime: 2
   hitWindow: 0.2
 --- !u!82 &1654293151
