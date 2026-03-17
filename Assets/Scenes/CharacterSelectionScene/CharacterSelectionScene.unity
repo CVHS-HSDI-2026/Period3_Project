@@ -184,9 +184,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 889901322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6b3f7243778b64db6a151d82c05330, type: 3}
+  m_Script: {fileID: 11500000, guid: d7e79d9d9c407374e9316643cf8845f6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameSceneUIManager
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  index: 0
+  character:
+  - {fileID: 4210284959890277339, guid: fb3ebf4ae3b4c7242b80964d3fcb1cc8, type: 3}
 --- !u!1 &1418590330
 GameObject:
   m_ObjectHideFlags: 0
