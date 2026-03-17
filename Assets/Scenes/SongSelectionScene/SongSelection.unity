@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf1b2ea4a3fafe42bdc18d69201d2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  pixel: {fileID: 12800000, guid: d3217df850f3e4d4dbfb9167d079984b, type: 3}
 --- !u!4 &2037920366
 Transform:
   m_ObjectHideFlags: 0
