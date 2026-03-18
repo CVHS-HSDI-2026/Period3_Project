@@ -14,7 +14,7 @@ public class RhythmNote
 public class RhythmData
 {
     public float tempo;
-    public List<float> beat_times;
+    public List<float> events;
     public string difficulty;
     public int note_count;
     public List<RhythmNote> notes;
