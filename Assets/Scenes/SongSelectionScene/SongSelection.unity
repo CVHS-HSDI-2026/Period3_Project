@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7c071371df7874d91d3a0ed5e0d796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FileOpener
+  playButton: {fileID: 0}
+  statusText: {fileID: 0}
 --- !u!4 &655243967
 Transform:
   m_ObjectHideFlags: 0
