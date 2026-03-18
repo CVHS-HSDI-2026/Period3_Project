@@ -1,0 +1,3510 @@
+{
+    "tempo": 139.67,
+    "beat_times": [
+        1.3235,
+        1.7647,
+        2.1943,
+        2.6355,
+        3.065,
+        3.4946,
+        3.9358,
+        4.3654,
+        4.8065,
+        5.2361,
+        5.6773,
+        6.1068,
+        6.548,
+        6.9776,
+        7.4072,
+        7.8483,
+        8.2779,
+        8.7191,
+        9.1487,
+        9.5898,
+        10.0194,
+        10.449,
+        10.8902,
+        11.3197,
+        11.7609,
+        12.1905,
+        12.6317,
+        13.0612,
+        13.5024,
+        13.9436,
+        14.3732,
+        14.8143,
+        15.2323,
+        15.6851,
+        16.1146,
+        16.5442,
+        16.9854,
+        17.415,
+        17.8561,
+        18.2857,
+        18.7153,
+        19.1565,
+        19.586,
+        20.0272,
+        20.4568,
+        20.898,
+        21.3275,
+        21.7687,
+        22.1983,
+        22.6395,
+        23.069,
+        23.5102,
+        23.9398,
+        24.3693,
+        24.8105,
+        25.2401,
+        25.6813,
+        26.1108,
+        26.552,
+        26.9816,
+        27.4228,
+        27.8523,
+        28.2819,
+        28.7231,
+        29.1527,
+        29.5938,
+        30.0234,
+        30.4646,
+        30.8941,
+        31.3353,
+        31.7649,
+        32.2061,
+        32.6356,
+        33.0652,
+        33.5064,
+        33.936,
+        34.3771,
+        34.8067,
+        35.2479,
+        35.6775,
+        36.1186,
+        36.5482,
+        36.9778,
+        37.419,
+        37.8485,
+        38.2897,
+        38.7193,
+        39.1605,
+        39.59,
+        40.0312,
+        40.4608,
+        40.902,
+        41.3315,
+        41.7611,
+        42.2023,
+        42.6318,
+        43.073,
+        43.5026,
+        43.9438,
+        44.3733,
+        44.8145,
+        45.2441,
+        45.6737,
+        46.1264,
+        46.556,
+        46.9856,
+        47.4151,
+        47.8563,
+        48.2859,
+        48.7271,
+        49.1566,
+        49.5862,
+        50.0274,
+        50.4686,
+        50.8981,
+        51.3277,
+        51.7573,
+        52.1985,
+        52.628,
+        53.0692,
+        53.5104,
+        53.94,
+        54.3811,
+        54.8107,
+        55.2403,
+        55.6815,
+        56.0994,
+        56.5522,
+        56.9818,
+        57.4229,
+        57.8525,
+        58.2937,
+        58.7233,
+        59.1528,
+        59.5824,
+        60.0236,
+        60.4532,
+        60.8943,
+        61.3355,
+        61.7651,
+        62.1946,
+        62.6358,
+        63.077,
+        63.5066,
+        63.9361,
+        64.3773,
+        64.8069,
+        65.2481,
+        65.6776,
+        66.1188,
+        66.5484,
+        66.9896,
+        67.4191,
+        67.8487,
+        68.2899,
+        68.7195,
+        69.1606,
+        69.5902,
+        70.0314,
+        70.461,
+        70.8905,
+        71.3317,
+        71.7729,
+        72.2024,
+        72.632,
+        73.0732,
+        73.5028,
+        73.9439,
+        74.3735,
+        74.8147,
+        75.2443,
+        75.6738,
+        76.115,
+        76.5562,
+        76.9858,
+        77.4153,
+        77.8449,
+        78.2861,
+        78.7273,
+        79.1568,
+        79.598,
+        80.0276,
+        80.4571,
+        80.8983,
+        81.3279,
+        81.7691,
+        82.1986,
+        82.6398,
+        83.0694,
+        83.5106,
+        83.9401,
+        84.3697,
+        84.8109,
+        85.2521,
+        85.6816,
+        86.1112,
+        86.5524,
+        86.982,
+        87.4231,
+        87.8527,
+        88.2939,
+        88.7234,
+        89.153,
+        89.5826,
+        90.0238,
+        90.4649,
+        90.8945,
+        91.3357,
+        91.7653,
+        92.1948,
+        92.636,
+        93.0656,
+        93.5068,
+        93.9363,
+        94.3775,
+        94.8071,
+        95.2483,
+        95.6778,
+        96.119,
+        96.5486,
+        96.9781,
+        97.4193,
+        97.8489,
+        98.2901,
+        98.7312,
+        99.1608,
+        99.5904,
+        100.0316,
+        100.4611,
+        100.9023,
+        101.3319,
+        101.7615,
+        102.2026,
+        102.6322,
+        103.0734,
+        103.5029,
+        103.9441,
+        104.3737,
+        104.8149,
+        105.2444,
+        105.6856,
+        106.1152,
+        106.5564,
+        106.9859,
+        107.4155,
+        107.8567,
+        108.2863,
+        108.7274,
+        109.157,
+        109.5982,
+        110.0278,
+        110.4573,
+        110.8985,
+        111.3281,
+        111.7693,
+        112.1988,
+        112.6284,
+        113.0696,
+        113.5107,
+        113.9403,
+        114.3699,
+        114.8111,
+        115.2522,
+        115.705,
+        116.123,
+        116.5642,
+        116.9937,
+        117.4581,
+        117.8645,
+        118.3057,
+        118.7352,
+        119.1996,
+        119.6408,
+        120.0704,
+        120.4767,
+        120.9179,
+        121.3243,
+        121.7538,
+        122.2066,
+        122.6594,
+        123.1006,
+        123.5302,
+        123.9481,
+        124.3893,
+        124.8189,
+        125.26,
+        125.6896,
+        126.1424,
+        126.5604,
+        126.9899,
+        127.4195,
+        127.8491,
+        128.2902,
+        128.7314,
+        129.161,
+        129.6022,
+        130.0317,
+        130.4613,
+        130.9025,
+        131.3205,
+        131.7616,
+        132.2144,
+        132.644,
+        133.0968,
+        133.5147,
+        133.9443,
+        134.3855,
+        134.8151,
+        135.2562,
+        135.6858,
+        136.1154,
+        136.5449,
+        136.9861,
+        137.4273,
+        137.8569,
+        138.2748,
+        138.7044,
+        139.1572,
+        139.5868,
+        140.0279,
+        140.4575,
+        140.8987,
+        141.3283,
+        141.7694,
+        142.199,
+        142.6402,
+        143.0698,
+        143.5109,
+        143.9405,
+        144.3701,
+        144.8112,
+        145.2408,
+        145.682,
+        146.1116,
+        146.5527,
+        146.9823,
+        147.4235,
+        147.8531,
+        148.2942,
+        148.7238,
+        149.1534,
+        149.5946,
+        150.0241,
+        150.4653,
+        150.8949,
+        151.3361,
+        151.7656,
+        152.2068,
+        152.6364,
+        153.0659,
+        153.5071,
+        153.9367,
+        154.3779,
+        154.8074,
+        155.2486,
+        155.6782,
+        156.1194,
+        156.5489,
+        156.9785,
+        157.4197,
+        157.8493,
+        158.2904,
+        158.72,
+        159.1612,
+        159.5907,
+        160.0319,
+        160.4615,
+        160.9027,
+        161.3322,
+        161.7618,
+        162.203,
+        162.6326,
+        163.0737,
+        163.5033,
+        163.9445,
+        164.3741,
+        164.8152,
+        165.2448,
+        165.6744,
+        166.1156,
+        166.5451,
+        166.9863,
+        167.4159,
+        167.8571,
+        168.2866,
+        168.7278,
+        169.1574,
+        169.5985,
+        170.0281,
+        170.4577,
+        170.8873,
+        171.3284,
+        171.7696,
+        172.1992,
+        172.6404,
+        173.0699,
+        173.4995,
+        173.9407,
+        174.3702,
+        174.8114,
+        175.241,
+        175.6822,
+        176.1117,
+        176.5529,
+        176.9825,
+        177.4121,
+        177.8532,
+        178.2944,
+        178.724,
+        179.1536,
+        179.5947,
+        180.0243,
+        180.4655,
+        180.8951,
+        181.3362,
+        181.7658,
+        182.1954,
+        182.6366,
+        183.0661,
+        183.5073,
+        183.9369,
+        184.378,
+        184.8076,
+        185.2488,
+        185.6784,
+        186.1195,
+        186.5491,
+        186.9903,
+        187.4199,
+        187.8494,
+        188.2906,
+        188.7202,
+        189.1614,
+        189.5909,
+        190.0321,
+        190.4617,
+        190.9029,
+        191.3324,
+        191.762,
+        192.2032,
+        192.6327,
+        193.0739,
+        193.5035,
+        193.9447,
+        194.3742,
+        194.8154,
+        195.245,
+        195.6746,
+        196.1157,
+        196.5453,
+        196.9865,
+        197.4161,
+        197.8572,
+        198.2868,
+        198.728,
+        199.1576,
+        199.5871,
+        200.0283,
+        200.4579,
+        200.8874,
+        201.3286,
+        201.7698,
+        202.1994,
+        202.6289,
+        203.0701,
+        203.5113,
+        203.9409,
+        204.3704,
+        204.8116,
+        205.2412,
+        205.6824,
+        206.1119,
+        206.5531,
+        206.9827,
+        207.4239,
+        207.8534,
+        208.283,
+        208.7242,
+        209.1537,
+        209.5833,
+        210.0245,
+        210.4657,
+        210.8952,
+        211.3364,
+        211.766,
+        212.2072,
+        212.6367,
+        213.0663,
+        213.5075,
+        213.9371,
+        214.3782,
+        214.8078,
+        215.249,
+        215.6785,
+        216.1197,
+        216.5493,
+        216.9905,
+        217.42,
+        217.8496,
+        218.2908,
+        218.7204,
+        219.1615,
+        219.5911,
+        220.0207,
+        220.4619,
+        220.903,
+        221.3326,
+        221.7622,
+        222.2034,
+        222.6329,
+        223.0741,
+        223.5037,
+        223.9449,
+        224.3744,
+        224.804,
+        225.1987,
+        225.5935,
+        226.0114,
+        226.441,
+        226.8706,
+        227.3117,
+        227.7413,
+        228.1825,
+        228.6121,
+        229.0532,
+        229.4944,
+        229.924,
+        230.3652,
+        230.8412,
+        231.3172,
+        231.77,
+        232.1995,
+        232.6291,
+        233.0703,
+        233.5115,
+        233.9527,
+        234.3822,
+        234.8118,
+        235.253,
+        235.6825,
+        236.1121,
+        236.5417,
+        236.9596,
+        237.424,
+        237.8536,
+        238.2832,
+        238.7244,
+        239.1655,
+        239.5951,
+        240.0247,
+        240.4659,
+        240.8838,
+        241.3366,
+        241.7662,
+        242.2073,
+        242.6369,
+        243.0665,
+        243.5077,
+        243.9372,
+        244.3784,
+        244.808,
+        245.2492,
+        245.6787,
+        246.1083,
+        246.5495,
+        246.979,
+        247.4202,
+        247.8498,
+        248.2794,
+        248.7205,
+        249.1617,
+        249.6029,
+        250.0325,
+        250.462,
+        250.9032,
+        251.3328,
+        251.7624,
+        252.2035,
+        252.6331,
+        253.0743,
+        253.5039,
+        253.945,
+        254.3746,
+        254.8042,
+        255.2454,
+        255.6749,
+        256.1161,
+        256.5457,
+        256.9868,
+        257.4164,
+        257.8576,
+        258.2872,
+        258.7283,
+        259.1579,
+        259.5875,
+        260.0287
+    ],
+    "difficulty": "medium",
+    "note_count": 415,
+    "notes": [
+        {
+            "time": 1.3235,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 1.7647,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 1.9621,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 2.1943,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 2.3917,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 2.6355,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 2.8212,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 3.065,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 3.2624,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 3.4946,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 3.7036,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 3.9358,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 4.1332,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 4.3654,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 4.5511,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 4.8065,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 5.0039,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 5.2361,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 5.4335,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 5.6773,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 5.8746,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 6.1068,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 6.2926,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 6.548,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 6.7338,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 6.9776,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 7.175,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 7.4072,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 7.6161,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 7.8483,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 8.0341,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 8.2779,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 8.4753,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 8.7191,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 8.9165,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 9.1487,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 9.346,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 9.5898,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 9.7756,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 10.0194,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 10.2168,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 10.449,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 10.658,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 10.8902,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 11.0875,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 11.3197,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 11.5055,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 11.7609,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 11.9583,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 12.1905,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 12.3995,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 12.6317,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 12.829,
+            "lane": 2,
+            "lane_name": "hi-hat",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 13.0612,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 13.2586,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 13.5024,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 13.9436,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 14.3732,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 90,
+            "strength": 0.45906105637550354
+        },
+        {
+            "time": 15.2323,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 15.6851,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 16.5442,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 16.9854,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 17.415,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 17.8561,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 18.2857,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 18.4715,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 18.7153,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 19.1565,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 19.3538,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 19.586,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 19.7718,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 20.0272,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 20.4568,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 20.6541,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 20.898,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 21.3275,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 21.5017,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 21.7687,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 21.9429,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 22.1983,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 22.3956,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 22.6395,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 22.8252,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 23.069,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 23.2548,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 23.5102,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 23.9398,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 24.1371,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 24.3693,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 24.8105,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 25.2401,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 25.4259,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 25.6813,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 26.1108,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 26.2966,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 26.552,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 26.9816,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 27.4228,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 27.6085,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 92,
+            "strength": 0.48355260491371155
+        },
+        {
+            "time": 27.8523,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 28.2819,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 28.398,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 28.5257,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 28.7231,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 28.8276,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 29.1527,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 29.5938,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 30.0234,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 30.4646,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 30.8941,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 31.0915,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 31.3353,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 31.7649,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 32.2061,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 32.3686,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 32.6356,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 32.833,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 98,
+            "strength": 0.5804800391197205
+        },
+        {
+            "time": 33.0652,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 33.5064,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 33.936,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 34.3771,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 34.5745,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 34.8067,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 35.2479,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 35.6775,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 35.8632,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 36.1186,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 36.5482,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 36.9778,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 37.419,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 37.8485,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 38.0459,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 38.2897,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 38.7193,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 39.1605,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 39.323,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 39.59,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 39.7874,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 40.0312,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 40.4608,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 40.6581,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 40.902,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 41.3315,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 41.5289,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 41.7611,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 42.3184,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 97,
+            "strength": 0.5606012344360352
+        },
+        {
+            "time": 45.2441,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 46.4167,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 46.7302,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 47.4151,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 50.8981,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 51.409,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 52.1985,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 53.3711,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 64,
+            "strength": 0.0647902712225914
+        },
+        {
+            "time": 53.6845,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 54.3811,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 56.9818,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 58.2937,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 59.1528,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 60.0236,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 127,
+            "strength": 1.0
+        },
+        {
+            "time": 60.221,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 60.4532,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 60.8943,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 61.7651,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 62.1946,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 62.6358,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 63.077,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 63.2628,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 63.5066,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 63.9361,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 64.3773,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 64.8069,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 65.2481,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 65.6776,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 66.1188,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 66.9896,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 67.1753,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 67.4191,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 67.8487,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 68.7195,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 70.8905,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 72.2024,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 72.632,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 73.0732,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 73.5028,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 73.9439,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 74.1297,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 74.3735,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 74.8147,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 75.2443,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 75.6738,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 76.115,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 76.9858,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 77.1715,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 79.1568,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 79.598,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 80.4571,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 80.8983,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 81.0841,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 81.3279,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 86.1112,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 86.982,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 87.8527,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 90.0238,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 90.4649,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 90.8945,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 91.3357,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 92.636,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 93.0656,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 93.9363,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 94.8071,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 95.2483,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 95.6778,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 97.1755,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 99.1608,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 99.5904,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 100.9023,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 101.7615,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 102.6322,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 103.5029,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 104.3737,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 104.8149,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 105.2444,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 107.8567,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 109.157,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 110.4573,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 139.5868,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 140.4575,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 141.3283,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 142.199,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 142.6402,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 143.0698,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 143.5109,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 143.6967,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 143.9405,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 144.3701,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 144.8112,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 145.2408,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 145.682,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 146.1116,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 146.5527,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 146.9823,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 147.1681,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 147.4235,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 147.8531,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 148.2942,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 148.7238,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 149.1534,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 149.5946,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 150.0241,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 150.4653,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 150.6395,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 150.8949,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 151.3361,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 152.2068,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 152.6364,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 153.0659,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 153.5071,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 154.8074,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 155.6782,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 156.1194,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 156.5489,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 156.9785,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 157.8493,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 158.2904,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 158.72,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 159.1612,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 159.5907,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 160.0319,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 160.4615,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 160.9027,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 161.0768,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 161.7618,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 162.6326,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 163.5033,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 163.8864,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 164.8152,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 165.6744,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 166.5451,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 169.5985,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 170.4577,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 171.3284,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 98,
+            "strength": 0.5798718333244324
+        },
+        {
+            "time": 171.7696,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 172.1992,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 172.6404,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 173.0699,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 173.4995,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 173.9407,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 174.3702,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 174.5676,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 175.241,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 176.5529,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 176.9825,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 177.4121,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 178.2944,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 179.1536,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 180.0243,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 182.1954,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 183.0661,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 183.5073,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 183.9369,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 184.378,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 184.8076,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 185.2488,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 185.4346,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 185.6784,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 186.5491,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 186.9903,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 187.4199,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 187.8494,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 188.2906,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 188.4764,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 122,
+            "strength": 0.9310817718505859
+        },
+        {
+            "time": 189.5909,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 190.4617,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 190.9029,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 191.3324,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 191.762,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 65,
+            "strength": 0.07665050774812698
+        },
+        {
+            "time": 192.3889,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 192.6327,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 193.5035,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 193.9447,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 194.3742,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 194.8154,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 195.245,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 195.6746,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 196.1157,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 197.4161,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 197.8572,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 198.2868,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 199.5871,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 200.0283,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 201.3286,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 201.7698,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 202.1994,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 202.6289,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 204.3704,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 205.2412,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 205.6824,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 206.1119,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 206.5531,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 206.9827,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 207.4239,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 72,
+            "strength": 0.19051656126976013
+        },
+        {
+            "time": 210.4657,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 210.8952,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 211.3364,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 212.2072,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 213.9371,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 214.8078,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 215.6785,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 216.1197,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 219.1615,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 219.5911,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 221.7622,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 237.2034,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 237.424,
+            "lane": 1,
+            "lane_name": "snare",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 237.8536,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 239.3397,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 242.7995,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 249.1617,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 251.3328,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 251.7624,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 253.0743,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 253.2484,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 253.5039,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 253.945,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 254.8042,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 255.0015,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 255.6749,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 256.1161,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 256.5457,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 256.7314,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 256.9868,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 257.4164,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 257.8576,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 258.2872,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 259.5875,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 260.0287,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 260.2144,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 260.435,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 260.8762,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 261.7353,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 261.9559,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 262.1765,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 262.6177,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 263.0473,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 263.5813,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 263.9064,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 265.2067,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 265.6595,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 266.0891,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 266.9598,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 267.3894,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 267.8306,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 268.2601,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 268.6897,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 269.5605,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 270.0016,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 270.4312,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 271.3136,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 271.7431,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 272.1727,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 273.9142,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 274.3438,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 274.7849,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 275.2145,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 275.6441,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 276.0853,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 276.956,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 277.8268,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 279.5566,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 281.7509,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 284.7811,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 285.0017,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 287.3934,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        },
+        {
+            "time": 287.8346,
+            "lane": 0,
+            "lane_name": "kick",
+            "velocity": 60,
+            "strength": 0.0
+        }
+    ]
+}
