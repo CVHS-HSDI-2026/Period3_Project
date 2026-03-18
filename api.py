@@ -8,7 +8,7 @@ import midiutil
 import io
 import pretty_midi
 import json
-import convert2
+import convert3
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav'}
 secret_key = os.urandom(24).hex() 
@@ -37,7 +37,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 def audio_splicing(filename):
-    midi_bytes = convert2.wav_to_rhythm_notes(filename, difficulty = "medium", snap_to_beats=True)
+    midi_bytes = convert3.run_audio(filename)
     
 
 
