@@ -1,91 +1,88 @@
 using UnityEngine;
 using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using System;
+using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour
 {
-    //    // The UXML asset should be assigned to the UIDocument component in the Inspector
+    public int index = 0;
+    public List<Sprite> character = new List<Sprite>();
+    Image characterImage;
 
-    //    void OnEnable()
-    //    {
-    //        // Get the UIDocument component
-    //        var uiDocument = GetComponent<UIDocument>();
+    void OnEnable()
+    {
+        var uiDocument = GetComponent<UIDocument>();
 
-    //        // Get the root visual element
-    //        var root = uiDocument.rootVisualElement;
+        var root = uiDocument.rootVisualElement;
 
-    //        // Get reference to button in code
-    //        Button myButton = root.Query<Button>("PlayButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError("PlayButton not found in UXML document!");
-    //        }
+        Button left = root.Query<Button>("LeftButton");
+        if (left != null)
+        {
+            left.clicked += OnLeftClicked;
+        }
+        else
+        {
+            Debug.LogError("Left Button not found in UXML document");
+        }
 
-    //        // Get reference to button in code
-    //        Button myButton = root.Query<Button>("CharacterSelectButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError("CharacterSelectButton not found in UXML document!");
-    //        }
+        Button right = root.Query<Button>("RightButton");
+        if (right != null)
+        {
+            right.clicked += OnRightClicked;
+        }
+        else
+        {
+            Debug.LogError("Right Button not found in UXML document");
+        }
 
-    //        // Get reference to button in code
-    //        Button myButton = root.Query<Button>("SettingsButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError("SettingsButton not found in UXML document!");
-    //        }
+        Image image = root.Query<Image>("CharacterImage");
+        if (image != null)
+        {
+            characterImage = image;
+            characterImage.sprite = character[index];
+        }
+        else
+        {
+            Debug.LogError("Character Image not found in UXML document");
+        }
+    }
 
-    //        // Get reference to button in code
-    //        Button myButton = root.Query<Button>("SongsButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError("SongsButton not found in UXML document!");
-    //        }
+    void OnLeftClicked()
+    {
+        if (index > 0)
+        {
+            index--;
+        }
+        if (characterImage != null) {
+            characterImage.sprite = character[index];
+        }
+    }
 
-    //        // Get reference to button in code
-    //        Button myButton = root.Query<Button>("RopeSkinsButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked += OnPlayButtonClicked; // Register the callback method
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError("RopeSkinsButton not found in UXML document!");
-    //        }
-    //    }
+    void OnRightClicked()
+    {
+        if (index <  character.Count-1)
+        {
+            index++;
+        }
+        if (characterImage != null) {
+            characterImage.sprite = character[index];
+        }
+    }
 
-    //    // This method is called when the button is clicked
-    //    private void OnPlayButtonClicked()
-    //    {
-    //        Debug.Log("Button was clicked!");
-    //        // Add your specific action here, e.g., load a scene, open a menu, etc.
-    //    }
+    void OnDisable()
+    {
+        var uiDocument = GetComponent<UIDocument>();
+        var root = uiDocument.rootVisualElement;
+        Button left = root.Query<Button>("LeftButton");
+        if (left != null)
+        {
+            left.clicked -= OnLeftClicked;
+        }
 
-    //    // It's good practice to unregister callbacks when the object is disabled or destroyed
-    //    void OnDisable()
-    //    {
-    //        var uiDocument = GetComponent<UIDocument>();
-    //        var root = uiDocument.rootVisualElement;
-    //        Button myButton = root.Query<Button>("MyButton");
-    //        if (myButton != null)
-    //        {
-    //            myButton.clicked -= OnPlayButtonClicked; // Unregister to prevent memory leaks
-    //        }
-    //    }
+        Button right = root.Query<Button>("RightButton");
+        if (right != null)
+        {
+            right.clicked -= OnRightClicked;
+        }
+    }
 }

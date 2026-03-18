@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-color: rgb(37, 150, 190);">
+        <ui:Label text="Rope" style="-unity-text-align: middle-center; font-size: 200%; color: rgb(124, 252, 0); text-shadow: 10px 5px 0 rgb(0, 0, 0); width: auto; height: auto; top: 10%;"/>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; position: absolute; width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center;">
+        <ui:Image name="SelectRight" style="background-image: url(&quot;project://database/Assets/Screenshot_2026-03-02_at_12.25.04_PM-removebg-preview.png?fileID=2682195086934850093&amp;guid=30d079a95776143d0a6240fe59b3b718&amp;type=3#Screenshot_2026-03-02_at_12.25.04_PM-removebg-preview_0&quot;); position: absolute; width: 25%; height: 13%; top: 58%; right: 10%;"/>
+        <ui:Image name="SelectLeft" style="background-image: url(&quot;project://database/Assets/Screenshot_2026-03-02_at_12.20.01_PM-removebg-preview.png?fileID=1657175070811932643&amp;guid=04bb5539522ef441baacf85fc1c7d548&amp;type=3#Screenshot_2026-03-02_at_12.20.01_PM-removebg-preview_0&quot;); width: 25%; height: 13%; position: absolute; top: 58%; left: 10%;"/>
+        <ui:Image name="Rope" style="background-image: url(&quot;project://database/Assets/BasicRopeF4.png?fileID=-7221292750994199416&amp;guid=7f638e2f2dbbde747ae4966a678c8d43&amp;type=3#BasicRopeF4_0&quot;); height: 13%; width: 25%; -unity-background-scale-mode: scale-to-fit; top: 58%; position: absolute;"/>
+    </ui:VisualElement>
+</ui:UXML>
