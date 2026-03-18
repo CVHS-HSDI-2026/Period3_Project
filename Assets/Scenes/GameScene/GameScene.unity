@@ -204,8 +204,8 @@ Transform:
   m_GameObject: {fileID: 193808696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
-  m_LocalScale: {x: 18, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: 1}
+  m_LocalScale: {x: 18, y: 0.5, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -841,8 +841,8 @@ MonoBehaviour:
   notePrefab: {fileID: 626150054767672575, guid: 156b92c7476f0b742916907605146fd0, type: 3}
   spawnPoint: {fileID: 1852496551}
   musicSource: {fileID: 1654293151}
-  mp3FileName: 01. Bad Apple!!.mp3
-  jsonFileName: 01. Bad Apple!!_rhythm.json
+  mp3FileName: 08. In the End.mp3
+  jsonFileName: Goodend.json
   approachTime: 2
   hitWindow: 0.2
 --- !u!82 &1654293151
@@ -982,7 +982,7 @@ Transform:
   m_GameObject: {fileID: 1852496550}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9, y: 3.5, z: -1}
+  m_LocalPosition: {x: -9, y: 3.5, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1073,7 +1073,7 @@ Transform:
   m_GameObject: {fileID: 2068574577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 3.5, z: -1}
+  m_LocalPosition: {x: 8, y: 3.5, z: -0.1}
   m_LocalScale: {x: 0.1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
