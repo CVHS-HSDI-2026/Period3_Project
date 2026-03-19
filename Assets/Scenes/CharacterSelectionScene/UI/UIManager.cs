@@ -87,12 +87,13 @@ public class UIManager : MonoBehaviour
 
     void OnBackClicked()
     {
-        SceneManager.LoadScene("Scenes/MainMenuScene/MainMenuScene");
+        SceneManager.LoadScene("Scenes/MainMenuScene/MainMainScene");
     }
 
     void OnSelectClicked()
     {
-
+        PlayerPrefs.SetInt("Character", index);
+        PlayerPrefs.Save();
     }
 
     void OnDisable()
