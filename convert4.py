@@ -1,0 +1,153 @@
+import librosa
+import numpy as np
+import json
+import os
+
+SUPPORTED_FORMATS = ('.wav', '.mp3', '.flac', '.ogg', '.m4a')
+
+
+def validate_audio_file(file_path):
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Audio file not found: {file_path}")
+    ext = os.path.splitext(file_path)[1].lower()
+    if ext not in SUPPORTED_FORMATS:
+        raise ValueError(
+            f"Unsupported audio format '{ext}'. "
+            f"Supported formats: {', '.join(SUPPORTED_FORMATS)}"
+        )
+
+
+def detect_rhythm_events(audio_file, min_gap=0.2):
+    validate_audio_file(audio_file)
+
+    print("Loading audio...")
+    signal, sr = librosa.load(audio_file, sr=None, res_type='kaiser_fast')
+
+    harmonic, percussive = librosa.effects.hpss(signal, margin=3.0)
+
+    onset_env_full = librosa.onset.onset_strength(
+        y=signal, sr=sr, hop_length=256,
+        aggregate=np.median, fmax=8000
+    )
+
+    onset_env_harmonic = librosa.onset.onset_strength(
+        y=harmonic, sr=sr, hop_length=256,
+        aggregate=np.mean, fmax=8000
+    )
+
+    onset_env_percussive = librosa.onset.onset_strength(
+        y=percussive, sr=sr, hop_length=256,
+        aggregate=np.median
+    )
+
+    combined_env = (
+        0.4 * onset_env_full +
+        0.4 * onset_env_harmonic +
+        0.2 * onset_env_percussive
+    )
+
+    if combined_env.max() > 0:
+        combined_env = combined_env / combined_env.max()
+
+    onset_frames = librosa.onset.onset_detect(
+        onset_envelope=combined_env,
+        sr=sr, hop_length=256,
+        backtrack=True,
+        pre_max=2, post_max=2,
+        pre_avg=4, post_avg=4,
+        delta=0.06, wait=8
+    )
+
+    onset_times     = librosa.frames_to_time(onset_frames, sr=sr, hop_length=256)
+    onset_strengths = combined_env[onset_frames]
+
+    flux_env = librosa.onset.onset_strength(
+        y=harmonic, sr=sr, hop_length=256,
+        feature=librosa.feature.melspectrogram,
+        aggregate=np.mean
+    )
+
+    flux_frames = librosa.onset.onset_detect(
+        onset_envelope=flux_env,
+        sr=sr, hop_length=256,
+        backtrack=True, delta=0.07, wait=8
+    )
+
+    flux_times      = librosa.frames_to_time(flux_frames, sr=sr, hop_length=256)
+    flux_strengths  = flux_env[flux_frames]
+
+    if flux_strengths.max() > 0:
+        flux_strengths = flux_strengths / flux_strengths.max()
+
+    all_times     = np.concatenate([onset_times, flux_times])
+    all_strengths = np.concatenate([onset_strengths, flux_strengths])
+
+    sort_idx      = np.argsort(all_times)
+    all_times     = all_times[sort_idx]
+    all_strengths = all_strengths[sort_idx]
+
+    filtered_times     = []
+    filtered_strengths = []
+    last_time          = -999
+
+    for t, s in zip(all_times, all_strengths):
+        if t - last_time >= min_gap:
+            filtered_times.append(float(round(t, 4)))
+            filtered_strengths.append(float(s))
+            last_time = t
+
+    return filtered_times, filtered_strengths
+
+
+def filter_by_strength(times, strengths, keep_top_percent=0.6):
+    """
+    Only keep the strongest hits.
+    keep_top_percent=0.6 means keep the top 60% strongest onsets.
+    Lower = fewer notes, higher = more notes.
+    """
+    if not strengths:
+        return times
+
+    threshold = np.percentile(strengths, (1 - keep_top_percent) * 100)
+
+    filtered = [
+        t for t, s in zip(times, strengths)
+        if s >= threshold
+    ]
+
+    print(f"Strength filter: kept {len(filtered)} of {len(times)} events "
+          f"(threshold={threshold:.3f})")
+
+    return filtered
+
+
+def get_tempo(audio_file):
+    signal, sr = librosa.load(audio_file, sr=None, res_type='kaiser_fast')
+    tempo, _   = librosa.beat.beat_track(y=signal, sr=sr)
+    return float(np.atleast_1d(tempo)[0])
+
+
+def build_json(audio_file, min_gap=0.2, keep_top_percent=0.6):
+    print(f"Processing: {audio_file}")
+
+    times, strengths = detect_rhythm_events(audio_file, min_gap=min_gap)
+    times            = filter_by_strength(times, strengths, keep_top_percent)
+    tempo            = get_tempo(audio_file)
+
+    output = {
+        "tempo":  round(tempo, 2),
+        "events": times
+    }
+
+    output_path = os.path.splitext(audio_file)[0] + "_rhythm.json"
+    with open(output_path, "w") as f:
+        json.dump(output, f, indent=4)
+
+    print(f"Done! {len(times)} events written to {output_path}")
+    print(f"Tempo: {tempo} BPM")
+
+    return output
+
+#build_json(audio_file, min_gap=0.2, keep_top_percent=0.75)
+
+

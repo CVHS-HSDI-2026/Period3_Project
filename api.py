@@ -8,7 +8,7 @@ import midiutil
 import io
 import pretty_midi
 import json
-import convert3
+import convert4
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav'}
 secret_key = os.urandom(24).hex() 
@@ -37,7 +37,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 def audio_splicing(filename):
-    midi_bytes = convert3.run_audio(filename)
+    midi_bytes = convert4.build_json(filename, min_gap=0.2, keep_top_percent=0.75)
     
 
 
