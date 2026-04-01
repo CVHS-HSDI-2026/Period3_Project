@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: 5e40e7f243a24e94789bc8af8748688e, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: e4bb9d7859979f14ca7fcb5655634624, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 755c59dfab31ba043a7a39258a44dede, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1
@@ -190,6 +190,8 @@ MonoBehaviour:
   index: 0
   character:
   - {fileID: 4210284959890277339, guid: fb3ebf4ae3b4c7242b80964d3fcb1cc8, type: 3}
+  - {fileID: -1132946518041028937, guid: f55fa43ade769ee44a1cd46fed66a721, type: 3}
+  - {fileID: -1132946518041028937, guid: f55fa43ade769ee44a1cd46fed66a721, type: 3}
 --- !u!1 &1418590330
 GameObject:
   m_ObjectHideFlags: 0

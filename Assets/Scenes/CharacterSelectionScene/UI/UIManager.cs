@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements; // Required namespace for UI Toolkit
+using UnityEngine.SceneManagement;
 using System;
 using System.Collections.Generic;
 
@@ -45,6 +46,21 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("Character Image not found in UXML document");
         }
+
+        Button back = root.Query<Button>("BackButton");
+        if (back != null)
+        {
+            back.clicked += OnBackClicked;
+        } else
+        {
+            Debug.LogError("Back Button no found in UXML document");
+        }
+
+        Button select = root.Query<Button>("SelectButton");
+        if (select != null)
+        {
+            select.clicked += OnSelectClicked;
+        }
     }
 
     void OnLeftClicked()
@@ -67,6 +83,17 @@ public class UIManager : MonoBehaviour
         if (characterImage != null) {
             characterImage.sprite = character[index];
         }
+    }
+
+    void OnBackClicked()
+    {
+        SceneManager.LoadScene("Scenes/MainMenuScene/MainMainScene");
+    }
+
+    void OnSelectClicked()
+    {
+        PlayerPrefs.SetInt("Character", index);
+        PlayerPrefs.Save();
     }
 
     void OnDisable()

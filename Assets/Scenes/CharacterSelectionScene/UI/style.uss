@@ -49,7 +49,7 @@ VisualElement.ButtonContainer {
 Button.ButtonContainerButton {
     color: var(--main-text-color);
     -unity-text-outline-color: var(--main-text-shadow-color);
-    font-size: 500%;
+    font-size: 800%;
     -unity-font-definition: url("project://database/Assets/Fonts/Pixelify%20Sans/static/PixelifySans-Bold.ttf?fileID=12800000&guid=d3217df850f3e4d4dbfb9167d079984b&type=3#PixelifySans-Bold");
     -unity-text-align: middle-center;
     align-self: center;
