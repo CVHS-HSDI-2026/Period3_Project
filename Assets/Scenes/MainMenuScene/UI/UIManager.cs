@@ -92,7 +92,7 @@ public class MainMenuSceneUIManager : MonoBehaviour
 
 	private void OnRopeSkinsButtonClicked()
 	{
-		Debug.Log("RopeSkinsButton was clicked!");
+		SceneManager.LoadScene("Scenes/RopeSelectionScene/RopeSelectionScene");
 	}
 
 	// It's good practice to unregister callbacks when the object is disabled or destroyed
