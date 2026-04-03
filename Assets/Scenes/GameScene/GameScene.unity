@@ -220,7 +220,6 @@ GameObject:
   m_Component:
   - component: {fileID: 231350985}
   - component: {fileID: 231350987}
-  - component: {fileID: 231350986}
   m_Layer: 0
   m_Name: NoteBar Camera
   m_TagString: Untagged
@@ -243,14 +242,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1147611406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &231350986
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231350984}
-  m_Enabled: 1
 --- !u!20 &231350987
 Camera:
   m_ObjectHideFlags: 0
@@ -319,7 +310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &376533505
 Animator:
   serializedVersion: 7
@@ -583,7 +574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6b3f7243778b64db6a151d82c05330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameSceneUIManager
-  RopeRenderTexture: {fileID: 0}
 --- !u!114 &1046345951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,7 +1138,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
