@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.IO;
+using System;
 
 public class RhythmGameManager : MonoBehaviour
 {
@@ -23,9 +24,17 @@ public class RhythmGameManager : MonoBehaviour
     private int nextEventIndex = 0;
     private float songStartTime;
     private bool gameStarted = false;
+    private int score = 0;
+
+    public static event Action OnPerfect;
+    public static event Action OnGood;
+    public static event Action OnOk;
+    public static event Action OnMiss;
+    public static event Action<int> OnScoreChanged;
 
     void Start()
     {
+        PlayerPrefs.SetInt("current_score", 0);
         LoadRhythmData();
         StartCoroutine(LoadAudioAndStart());
     }
@@ -117,9 +126,10 @@ public class RhythmGameManager : MonoBehaviour
     {
         GameObject noteObj = Instantiate(notePrefab, spawnPoint.position,
                                          Quaternion.identity);
+        noteObj.layer = LayerMask.NameToLayer("NoteBar");
         NoteObject note = noteObj.GetComponent<NoteObject>();
         note.targetTime = eventTime;
-        note.lane = 0;
+        note.lane = 0;   
     }
 
     void TryHit(float songTime)
@@ -157,13 +167,28 @@ public class RhythmGameManager : MonoBehaviour
 
     void RegisterHit(float timingDiff)
     {
-        if (timingDiff < 0.05f) Debug.Log("PERFECT!");
-        else if (timingDiff < 0.1f) Debug.Log("GOOD");
-        else Debug.Log("OK");
+        if (timingDiff < 0.05f) { 
+            //Debug.Log("PERFECT!");
+            score += 3;
+            OnPerfect?.Invoke();
+        }
+        else if (timingDiff < 0.1f) { 
+            //Debug.Log("GOOD");
+            score += 2;
+            OnGood?.Invoke();
+        }
+        else { 
+            //Debug.Log("OK");
+            score += 1;
+            OnOk?.Invoke();
+        }
+
+        //PlayerPrefs.SetInt("current_score", score);
+        OnScoreChanged?.Invoke(score);
     }
 
     void RegisterMiss()
     {
-        Debug.Log("MISS");
+        OnMiss.Invoke();
     }
 }

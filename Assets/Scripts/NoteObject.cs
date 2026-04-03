@@ -11,7 +11,7 @@ public class NoteObject : MonoBehaviour
 
     void Start()
     {
-        GetComponent<SpriteRenderer>().color = Color.cyan;
+        //GetComponent<SpriteRenderer>().color = Color.cyan;
     }
 
     void Update()
