@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 using UnityEngine.UIElements; // Required namespace for UI Toolkit
 using UI = UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -33,10 +33,22 @@ public class SongSelectionSceneUIManager : MonoBehaviour
         var root = uiDocument.rootVisualElement;
         var container = root.Q<VisualElement>("unity-content-container");
            catImage = root.Query<Image>("JumpingCat");
-        for (int i = 0; i < 20; i++)
+        string readjson = File.ReadAllText(Application.persistentDataPath + "/save.json");
+        SaveData loadedData = JsonUtility.FromJson<SaveData>(readjson);
+        if (loadedData == null)
+        {
+            loadedData = new SaveData();
+            loadedData.items = new List<song>();
+        }
+
+        if (loadedData.items == null)
+        {
+            loadedData.items = new List<song>();
+        }
+        for ( int i =0; i<loadedData.items.Count; i++)
         {
             Button newButton = new Button();
-            newButton.text = $"Song NAMES!!";
+            newButton.text = loadedData.items[i].itemName;
             int index = i; // capture loop variable
          newButton.style.width = new Length(10, LengthUnit.Percent);  // 50% width
             //newButton.style.paddingTop = new Length(20, LengthUnit.Percent);
@@ -46,7 +58,7 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             newButton.style.marginLeft = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
-            newButton.clicked += () => Debug.Log($"Button {index + 1} clicked!");
+            newButton.clicked += () => PlayerPrefs.SetInt("currentSong", index);
             newButton.RegisterCallback<MouseEnterEvent>(e => newButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
             newButton.RegisterCallback<MouseLeaveEvent>(e => newButton.style.scale = new Scale(Vector3.one));
             container.Add(newButton);
@@ -104,8 +116,12 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 
         string fileName = Path.GetFileName(selectedPath);
         string destinationPath = Path.Combine(Application.persistentDataPath, fileName);
-        StartUpload(destinationPath);
         File.Copy(selectedPath, destinationPath, true);
+        StartUpload(destinationPath);
+        
+
+
+       
 
         Debug.Log("Song stored at: " + destinationPath);
         void Start()
@@ -122,6 +138,19 @@ public class SongSelectionSceneUIManager : MonoBehaviour
     {
         public string message;
         public int score;
+    }
+    [System.Serializable]
+    public class SaveData
+    {
+        public List<song> items;
+    }
+
+    [System.Serializable]
+    public class song
+    {
+        public string itemName;
+        public string savedPath;
+        public string savedJsonPath;
     }
     IEnumerator Upload(String file)
     {
@@ -150,6 +179,27 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             string jsonPath = Path.Combine(Application.persistentDataPath, (nameOfFile + ".json"));
             File.WriteAllText(jsonPath, jsonResponse);
             Debug.Log("saved to :" + jsonPath);
+
+
+            string readjson = File.ReadAllText(Application.persistentDataPath + "/save.json");
+            SaveData loadedData = JsonUtility.FromJson<SaveData>(readjson);
+            if (loadedData == null)
+            {
+                loadedData = new SaveData();
+                loadedData.items = new List<song>();
+            }
+
+            if (loadedData.items == null)
+            {
+                loadedData.items = new List<song>();
+            }
+            loadedData.items.Add(new song { itemName = nameOfFile, savedPath = file, savedJsonPath = jsonPath });
+            string updatedJson = JsonUtility.ToJson(loadedData, true);
+            File.WriteAllText(Application.persistentDataPath + "/save.json", updatedJson);
+            
+           
+            
+           
         }
         else
         {
