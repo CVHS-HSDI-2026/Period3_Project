@@ -7,13 +7,34 @@ using System;
 
 public class RhythmGameManager : MonoBehaviour
 {
+    [System.Serializable]
+    public class ResponseData
+    {
+        public string message;
+        public int score;
+    }
+    [System.Serializable]
+    public class SaveData
+    {
+        public List<song> items;
+    }
+
+    [System.Serializable]
+    public class song
+    {
+        public string itemName;
+        public string savedPath;
+        public string savedJsonPath;
+    }
     [Header("Setup")]
     public GameObject notePrefab;
     public Transform spawnPoint;
     public AudioSource musicSource;
 
     [Header("Song Files")]
-    public string mp3FileName = "01. Bad Apple!!.mp3";
+
+
+    public string mp3FileName;
     public string jsonFileName = "01. Bad Apple!!.json";
 
     [Header("Timing")]
@@ -41,7 +62,23 @@ public class RhythmGameManager : MonoBehaviour
 
     void LoadRhythmData()
     {
-        string path = Path.Combine(Application.streamingAssetsPath, jsonFileName);
+        string readjson = File.ReadAllText(Application.persistentDataPath + "/save.json");
+        SaveData loadedData = JsonUtility.FromJson<SaveData>(readjson);
+        if (loadedData == null)
+        {
+            loadedData = new SaveData();
+            loadedData.items = new List<song>();
+        }
+
+        if (loadedData.items == null)
+        {
+            loadedData.items = new List<song>();
+        }
+        
+        string fileName = loadedData.items[PlayerPrefs.GetInt("currentSong")].itemName;
+        mp3FileName = fileName;
+        jsonFileName = fileName + ".json";
+        string path = Path.Combine(Application.persistentDataPath, jsonFileName);
 
         if (!File.Exists(path))
         {
@@ -68,7 +105,7 @@ public class RhythmGameManager : MonoBehaviour
 
     IEnumerator LoadAudioAndStart()
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, mp3FileName);
+        string filePath = Path.Combine(Application.persistentDataPath, mp3FileName);
         string audioPath = new System.Uri(filePath).AbsoluteUri;
 
         using (var www = new UnityEngine.Networking.UnityWebRequest(audioPath))

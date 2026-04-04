@@ -21,6 +21,11 @@ public class SongSelectionSceneUIManager : MonoBehaviour
 	float catGroundToleranceRange = 1;
 	Image catImage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void handleSong(int index)
+    {
+        PlayerPrefs.SetInt("currentSong", index);
+        SceneManager.LoadScene("Scenes/GameScene/GameScene");
+    }
     void Start()
     {
         string serverurl = "http://127.0.0.1:5000";
@@ -58,7 +63,8 @@ public class SongSelectionSceneUIManager : MonoBehaviour
             newButton.style.marginLeft = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginRight = new Length(2.5f, LengthUnit.Percent);
             newButton.style.marginTop = new Length(5, LengthUnit.Percent);
-            newButton.clicked += () => PlayerPrefs.SetInt("currentSong", index);
+
+            newButton.clicked += () => handleSong(index);
             newButton.RegisterCallback<MouseEnterEvent>(e => newButton.style.scale = new Scale(new Vector3(1.1f, 1.1f, 1)));
             newButton.RegisterCallback<MouseLeaveEvent>(e => newButton.style.scale = new Scale(Vector3.one));
             container.Add(newButton);
