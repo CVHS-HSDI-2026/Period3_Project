@@ -10,7 +10,7 @@ import pretty_midi
 import json
 import convert4
 
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav'}
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'midi', 'mid', 'wav', 'mp3'}
 secret_key = os.urandom(24).hex() 
 app = Flask(__name__)
 app.secret_key = secret_key
